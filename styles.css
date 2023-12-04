@@ -1,6 +1,9 @@
 body {
- background-image: url("Robot Repair background.png");
- background-color: #cccccc;
+    background-image: url("Robot Repair background.png");
+    background-color: #cccccc;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .carousel {
