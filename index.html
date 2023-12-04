@@ -34,6 +34,14 @@
 
     <script>
         // JavaScript for carousel will go here
+        let slideIndex = 0;
+
+        function moveSlide(step) {
+            const slides = document.querySelectorAll('.carousel .slide');
+            slideIndex = (slideIndex + step + slides.length) % slides.length;
+            const offset = -slideIndex * 100;
+            document.querySelector('.carousel-slides').style.transform = `translateX(${offset}%)`;
+        }
     </script>
 
 </body>
