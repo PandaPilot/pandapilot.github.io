@@ -1,54 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello World</title>
+    <title>Peter Zheng</title>
     <style>
-        body {
-            background-color: lightblue;
-            text-align: center;
-            padding-top: 20px;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            color: navy;
-            font-size: 3em;
-        }
-        .profile, .projects {
-            background-color: white;
-            margin: 30px auto;
-            width: 80%;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-        .profile img {
-            max-width: 100%;
-            height: auto;
-        }
-        .project-item {
-            margin-bottom: 15px;
-        }
+        <link rel="stylesheet" href="styles.css"> /* Your CSS styles will go here */
     </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <div class="profile">
-        <h2>About Me</h2>
+
+    <section id="about">
+        <h1>About Me</h1>
         <p>I am a passionate Robotics PhD graduate from Imperial College London. I enjoy hands-on problem-solving. My expertise spans a diverse array of topics within the field, including the innovative design of perching mechanisms and morphing quadcopters. I possess a strong foundation in mechatronics and control systems, coupled with a keen proficiency in electronics design. Additionally, I have a significant background in supervised learning, which complements my technical skills. Below, I'm excited to share some of the projects that encapsulate my journey and achievements in robotics.</p>
-    </div>
-    <div class="projects">
+    </section>
+
+    <section id="projects">
         <h2>My Projects</h2>
-        <div class="project-item">
-            <h3>Project Title 1</h3>
-            <img src="path_to_your_photo.jpg" alt="The Sloth">
-            <p>Description of Project 1...</p>
+        <div class="carousel">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel-slides">
+                <!-- Each project slide -->
+                <div class="slide">
+                    <img src="project1.jpg" alt="Project 1">
+                    <div class="description">
+                        <h3>Project 1</h3>
+                        <p>Description of Project 1...</p>
+                    </div>
+                </div>
+                <!-- Repeat for more projects -->
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </div>
-        <div class="project-item">
-            <h3>Project Title 2</h3>
-            <img src="path_to_your_photo.jpg" alt="Tilty">
-            <p>Description of Project 2...</p>
-        </div>
-        <!-- Add more projects as needed -->
-    </div>
+    </section>
+
+    <script>
+        // JavaScript for carousel will go here
+    </script>
+
 </body>
 </html>
+
