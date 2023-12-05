@@ -1,9 +1,9 @@
 body {
-    background-image: url("Robot_Repair_background.png");
+    background-image: url("Robot_Repair_background2.png");
     background-color: #aa8899;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: right bottom;
     background-attachment: fixed;
 }
 
