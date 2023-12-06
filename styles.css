@@ -16,7 +16,7 @@ body {
 
 .carousel {
     position: relative;
-    width: 100%;
+    width: 90%;
     overflow: hidden;
 }
 
@@ -26,12 +26,12 @@ body {
 }
 
 .slide {
-    min-width: 100%;
+    min-width: 80%;
     display: flex;
 }
 
 .slide img {
-    width: 50%;
+    width: 75%;
     /* Adjust size as needed */
 }
 
