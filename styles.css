@@ -8,9 +8,10 @@ body {
 }
 
 .translucent-box {
-    background-color: rgba(255, 255, 255, 0.5); /* White background with 50% opacity */
+    background-color: rgba(235, 235, 235, 0.5); /* White background with 50% opacity */
     padding: 20px; /* Adjust padding as needed */
-    border-radius: 10px; /* Optional, for rounded corners */
+    margin-bottom: 20px; /* Adds space below each translucent box */
+    border-radius: 5px; /* Optional, for rounded corners */
     /* Additional styling as needed */
 }
 
@@ -26,12 +27,13 @@ body {
 }
 
 .slide {
-    min-width: 80%;
+    min-width: 90%;
     display: flex;
 }
 
 .slide img {
-    width: 75%;
+    height: 80px;
+    
     /* Adjust size as needed */
 }
 
