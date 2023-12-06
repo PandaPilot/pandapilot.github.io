@@ -21,6 +21,11 @@ body {
     margin-bottom: 20px; /* Space between each project */
 }
 
+.description {
+    width: 50%; /* Adjust the width as needed */
+    /* Additional styling for the text */
+}
+
 .carousel {
     position: relative;
     width: 90%;
@@ -39,7 +44,7 @@ body {
 
 .slide img {
     height: 400px;
-    
+    margin-right: 20px; /* Space between the image and the text */
     /* Adjust size as needed */
 }
 
