@@ -67,6 +67,10 @@ body {
     width: 25px;
 }
 
+.prev:hover, .next:hover {
+  background-color: bisque;
+}
+
 .prev {
     left: 0px;
 }
