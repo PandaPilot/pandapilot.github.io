@@ -57,17 +57,20 @@ body {
 
 .prev, .next {
     position: absolute;
-    top: 50%;
+    top: 0%;
     transform: translateY(-50%);
     background-color: #ddd;
     border: none;
     padding: 10px;
     cursor: pointer;
-    height: 300px;
+    height: 315px;
     width: 25px;
 }
 
-.prev:hover, .next:hover {
+.prev:hover {
+  background-color: bisque;
+} 
+.next:hover {
   background-color: bisque;
 }
 
