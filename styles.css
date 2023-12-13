@@ -63,13 +63,13 @@ body {
     padding: 10px;
     cursor: pointer;
     height: 300px;
-    width: 20px;
+    width: 25px;
 }
 
 .prev {
-    left: 10px;
+    left: 0px;
 }
 
 .next {
-    right: 10px;
+    right: 0px;
 }
