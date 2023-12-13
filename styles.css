@@ -27,7 +27,7 @@ body {
 }
 
 .carousel {
-    position: relative;
+    position: center;
     width: 90%;
     overflow: hidden;
 }
