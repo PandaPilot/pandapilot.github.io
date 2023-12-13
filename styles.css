@@ -61,6 +61,7 @@ body {
     transform: translateY(-50%);
     background-color: #ddd;
     border: none;
+    border-radius: 5px; 
     padding: 10px;
     cursor: pointer;
     height: 315px;
