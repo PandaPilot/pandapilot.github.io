@@ -49,6 +49,12 @@ body {
     /* Adjust size as needed */
 }
 
+iframe {
+    width: 50%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Standard aspect ratio for YouTube videos */
+}
+
 .slide .description {
     padding: 20px;
     /* width: 50%;
