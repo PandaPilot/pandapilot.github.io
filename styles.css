@@ -40,6 +40,7 @@ body {
 .slide {
     min-width: 100%;
     display: flex;
+    justify-content: center; /* Horizontally center the contents */
 }
 
 .slide img {
@@ -50,7 +51,7 @@ body {
 
 .slide .description {
     padding: 20px;
-    width: 50%;
+    /* width: 50%;
     /* Additional styling */
 }
 
@@ -62,12 +63,18 @@ body {
     border: none;
     padding: 10px;
     cursor: pointer;
+    height: 300px;
+    width: 25px;
+}
+
+.prev:hover, .next:hover {
+  background-color: bisque;
 }
 
 .prev {
-    left: 10px;
+    left: 0px;
 }
 
 .next {
-    right: 10px;
+    right: 0px;
 }
