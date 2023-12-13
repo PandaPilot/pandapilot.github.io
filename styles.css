@@ -62,6 +62,8 @@ body {
     border: none;
     padding: 10px;
     cursor: pointer;
+    height: 300px;
+    width: 20px;
 }
 
 .prev {
