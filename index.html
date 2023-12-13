@@ -60,14 +60,38 @@
 
     <script>
         // JavaScript for carousel will go here
-        let slideIndex = 0;
+        /* let slideIndex = 0;
 
         function moveSlide(step) {
             const slides = document.querySelectorAll('.carousel .slide');
             slideIndex = (slideIndex + step + slides.length) % slides.length;
             const offset = -slideIndex * 100;
             document.querySelector('.carousel-slides').style.transform = `translateX(${offset}%)`;
+        } */
+        let slideIndex = 0;
+        let slides = document.querySelectorAll('.carousel .slide');
+        let totalSlides = slides.length;
+
+        function moveSlide(step) {
+            slideIndex = (slideIndex + step + totalSlides) % totalSlides;
+            updateCarousel();
         }
+        
+        function updateCarousel() {
+            let offset = -slideIndex * 100;
+            document.querySelector('.carousel-slides').style.transform = `translateX(${offset}%)`;
+        }
+        
+        // This function clones the first and last slides to create a seamless loop
+        function cloneSlides() {
+            let firstSlide = slides[0].cloneNode(true);
+            let lastSlide = slides[slides.length - 1].cloneNode(true);
+            document.querySelector('.carousel-slides').appendChild(firstSlide);
+            document.querySelector('.carousel-slides').prepend(lastSlide);
+        }
+        
+        cloneSlides();
+
     </script>
 
 </body>
