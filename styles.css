@@ -38,8 +38,7 @@ body {
 }
 
 .slide {
-    /*min-width: 90%;*/
-    width: 90%;
+    min-width: 90%;
     display: flex;
 }
 
