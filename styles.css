@@ -56,7 +56,7 @@ body {
 }
 
 .prev, .next {
-    position: sticky; /*was absolute*/
+    position: absolute; /*was absolute*/
     top: 50%;
     transform: translateY(-50%);
     background-color: #ddd;
