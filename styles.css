@@ -38,12 +38,12 @@ body {
 }
 
 .slide {
-    min-width: 90%;
+    min-width: 100%;
     display: flex;
 }
 
 .slide img {
-    height: 400px;
+    height: 300px;
     margin-right: 20px; /* Space between the image and the text */
     /* Adjust size as needed */
 }
