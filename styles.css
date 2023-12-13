@@ -56,8 +56,8 @@ body {
 }
 
 .prev, .next {
-    position: absolute;
-    top: 0%;
+    position: sticky; /*was absolute*/
+    top: 50%;
     transform: translateY(-50%);
     background-color: #ddd;
     border: none;
@@ -65,6 +65,7 @@ body {
     cursor: pointer;
     height: 315px;
     width: 25px;
+    z-index: 10;
 }
 
 .prev:hover {
