@@ -28,7 +28,7 @@ body {
 
 .carousel {
     position: relative;
-    width: 100%;
+    width: 90%;
     overflow: hidden;
 }
 
@@ -38,7 +38,8 @@ body {
 }
 
 .slide {
-    min-width: 100%;
+    /*min-width: 90%;*/
+    width: 90%;
     display: flex;
 }
 
