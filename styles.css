@@ -81,8 +81,8 @@ iframe {
     border-radius: 5px; 
     padding: 10px;
     cursor: pointer;
-    height: 50%;
-    width: 40px;
+    height: 400px;
+    width: 4%;
     z-index: 10;
 }
 
@@ -94,9 +94,9 @@ iframe {
 }
 
 .prev {
-    left: 10px;
+    left: 0px;
 }
 
 .next {
-    right: 10px;
+    right: 0px;
 }
