@@ -41,7 +41,6 @@ body {
     display: flex;
     justify-content: center; /* Horizontally center the contents */
     margin-right: 5%;
-    margin-left: 5%;
 }
 
 .opaque-box {
