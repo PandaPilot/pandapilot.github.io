@@ -26,7 +26,7 @@ body {
 }
 
 .carousel {
-    position: relative;
+    position: absolute;
     top: 50px;
     width: 90%;
     overflow: hidden;
@@ -79,7 +79,7 @@ iframe {
 .prev, .next {
     position: sticky; /*was absolute*/
     top: 0%;
-    transform: translateY(0%);
+    transform: translateY(100%);
     background-color: #ddd;
     border: none;
     border-radius: 5px; 
