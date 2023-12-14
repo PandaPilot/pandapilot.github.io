@@ -37,6 +37,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center; /* Horizontally center the contents */
+    margin-right: 20%;
 }
 
 .slide img {
