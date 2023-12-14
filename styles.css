@@ -40,7 +40,8 @@ body {
     width: 80%;
     display: flex;
     justify-content: center; /* Horizontally center the contents */
-    margin-right: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .opaque-box {
