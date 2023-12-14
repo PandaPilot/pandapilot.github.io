@@ -17,7 +17,7 @@ body {
 
 .opaque-box {
     background-color: rgba(255, 255, 255, 0.9); /* White background with 50% opacity */
-    padding: 0px; /* Adjust padding as needed */
+    padding: 10px; /* Adjust padding as needed */
     margin-bottom: 0px; /* Adds space below each translucent box */
     border-radius: 5px; /* Optional, for rounded corners */
     /* Additional styling as needed */
