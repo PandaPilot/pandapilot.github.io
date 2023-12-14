@@ -10,14 +10,14 @@ body {
 .translucent-box {
     background-color: rgba(235, 235, 235, 0.8); /* White background with 50% opacity */
     padding: 20px; /* Adjust padding as needed */
-    margin-bottom: 10vh; /* Adds space below each translucent box */
+    margin-bottom: 7.5vh; /* Adds space below each translucent box */
     border-radius: 5px; /* Optional, for rounded corners */
     /* Additional styling as needed */
 }
 
 .opaque-box {
-    background-color: rgba(255, 255, 255, 0.9); /* White background with 50% opacity */
-    padding: 0px; /* Adjust padding as needed */
+    background-color: rgba(255, 255, 255, 1.); /* White background with 50% opacity */
+    padding: 5%; /* Adjust padding as needed */
     margin-bottom: 0px; /* Adds space below each translucent box */
     border-radius: 5px; /* Optional, for rounded corners */
     /* Additional styling as needed */
