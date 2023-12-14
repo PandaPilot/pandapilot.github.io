@@ -11,8 +11,10 @@ body {
 .translucent-box {
     position: relative;
     background-color: rgba(235, 235, 235, 0.8); /* White background with 50% opacity */
-    padding: 2.5vw; /* Adjust padding as needed */
+    padding: 1.vw; /* Adjust padding as needed */
     margin-bottom: 2.5vh; /* Adds space below each translucent box */
+    margin-left: 2.5vw; /* Adds space below each translucent box */
+    margin-right: 2.5vw; /* Adds space below each translucent box */
     border-radius: 5px; /* Optional, for rounded corners */
     /* Additional styling as needed */
 }
@@ -79,7 +81,7 @@ iframe {
     background-color: #ddd;
     border: none;
     border-radius: 5px; 
-    padding: 10px;
+    /*padding: 10px;*/
     cursor: pointer;
     height: 400px;
     width: 5%;
