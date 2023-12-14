@@ -9,7 +9,6 @@ body {
 }
 
 .translucent-box {
-    position: static;
     background-color: rgba(235, 235, 235, 0.8); /* White background with 50% opacity */
     padding: 2.5vw; /* Adjust padding as needed */
     margin-bottom: 2.5vh; /* Adds space below each translucent box */
@@ -46,7 +45,6 @@ body {
 }
 
 .opaque-box {
-    position: absolute;
     background-color: rgba(255, 255, 255, 1.); /* White background with 50% opacity */
     padding: 5%; /* Adjust padding as needed */
     /*margin-bottom: 0px; /* Adds space below each translucent box */
