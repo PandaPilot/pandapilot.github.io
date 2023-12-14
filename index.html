@@ -76,7 +76,14 @@
             const offset = -slideIndex * 100;
             document.querySelector('.carousel-slides').style.transform = `translateX(${offset}%)`;
         }
-
+        
+        function setCarouselWidth() {
+            const slides = document.querySelectorAll('.carousel .slide');
+            const totalWidth = slides.length * 100; // Assuming each slide is 100% of the carousel width
+            document.querySelector('.carousel-slides').style.width = `${totalWidth}%`;
+        }
+        
+        setCarouselWidth();
     </script>
 
 </body>
