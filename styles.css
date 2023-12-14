@@ -73,7 +73,7 @@ iframe {
 
 .prev, .next {
     position: absolute; /*was absolute*/
-    top: 50%;
+    top: 0%;
     transform: translateY(-100%);
     background-color: #ddd;
     border: none;
