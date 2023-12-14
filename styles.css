@@ -62,8 +62,8 @@ iframe {
     aspect-ratio: 16 / 9; /* Standard aspect ratio for YouTube videos */
 }
 
-.slide .description {
-    padding: 20px;
+.slide .opaque-box .description {
+    padding: 5%;
     width: 100%;
     /* Additional styling */
 }
