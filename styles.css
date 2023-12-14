@@ -39,7 +39,7 @@ body {
 
 .carousel-slides {
     display: flex;
-    /*flex-wrap: nowrap;*/
+    flex-wrap: nowrap;
     transition: transform 0.5s ease;
 }
 
@@ -47,7 +47,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center; /* Horizontally center the contents */
-    margin-right: 10%;
+    /*margin-right: 10%;*/
 }
 
 .slide img {
