@@ -73,7 +73,7 @@
         function moveSlide(step) {
             const slides = document.querySelectorAll('.carousel .slide');
             slideIndex = (slideIndex + step + slides.length) % slides.length;
-            const offset = -slideIndex * 100 / slides.length;
+            const offset = -slideIndex * 90 / slides.length;
             document.querySelector('.carousel-slides').style.transform = `translateX(${offset}%)`;
         }
         
