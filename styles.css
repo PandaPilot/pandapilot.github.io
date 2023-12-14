@@ -9,7 +9,7 @@ body {
 }
 
 .translucent-box {
-    position: relative;
+    position: static;
     background-color: rgba(235, 235, 235, 0.8); /* White background with 50% opacity */
     padding: 50px; /* Adjust padding as needed */
     margin-bottom: 2.5vh; /* Adds space below each translucent box */
