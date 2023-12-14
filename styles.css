@@ -73,14 +73,14 @@ iframe {
 
 .prev, .next {
     position: absolute; /*was absolute*/
-    top: 50%;
+    top: 10%;
     /*transform: translateY(-100%);*/
     background-color: #ddd;
     border: none;
     border-radius: 5px; 
     padding: 10px;
     cursor: pointer;
-    height: 400px;
+    height: 80%;
     width: 40px;
     z-index: 10;
 }
