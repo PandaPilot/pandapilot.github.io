@@ -91,12 +91,11 @@ iframe {
 .next:hover {
   background-color: bisque;
 }
-/*
+
 .prev {
-    left: -10px;
+    left: 2.5%;
 }
 
 .next {
-    right: 10px;
+    right: 2.5%;
 }
-*/
