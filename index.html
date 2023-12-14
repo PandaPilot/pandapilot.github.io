@@ -15,8 +15,8 @@
     <section id="projects">
         <div class="translucent-box">
             <h2>My Projects</h2>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
             <div class="carousel">
-                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
                 <div class="carousel-slides">
                     <!-- Each project slide -->
                     <div class="slide">
@@ -43,22 +43,26 @@
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="description">
-                            <h3>The Ring</h3>
-                            <img src="Projects/Ring_.png" alt=Bee">
-                            <p>Tilting protective measuring wheel</p>
+                        <div class="opaque-box">
+                            <div class="description">
+                                <h3>The Ring</h3>
+                                <img src="Projects/Ring_.png" alt=Bee">
+                                <p>Tilting protective measuring wheel</p>
+                            </div>
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="description">
-                            <h3>The Bee</h3>
-                            <img src="Projects/Bee_.png" alt=Bee">
-                            <p>Screwless single-part assembly mini drone with optical flow sensor and touch sensor modules</p>
+                        <div class="opaque-box">
+                            <div class="description">
+                                <h3>The Bee</h3>
+                                <img src="Projects/Bee_.png" alt=Bee">
+                                <p>Screwless single-part assembly mini drone with optical flow sensor and touch sensor modules</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <button class="next" onclick="moveSlide(1)">&#10095;</button>
             </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </div>
     </section>
 
