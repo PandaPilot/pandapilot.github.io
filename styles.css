@@ -41,6 +41,7 @@ body {
 
 .carousel-slides {
     display: flex;
+    position: absolute;
     flex-wrap: nowrap;
     transition: transform 0.5s ease;
 }
