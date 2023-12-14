@@ -46,7 +46,7 @@ body {
 
 .opaque-box {
     background-color: rgba(255, 255, 255, 1.); /* White background with 50% opacity */
-    padding: 0%; /* Adjust padding as needed */
+    padding: 5%; /* Adjust padding as needed */
     /*margin-bottom: 0px; /* Adds space below each translucent box */
     border-radius: 5px; /* Optional, for rounded corners */
     /* Additional styling as needed */
@@ -73,7 +73,7 @@ iframe {
 
 .prev, .next {
     position: absolute; /*was absolute*/
-    top: 100%;
+    top: 50%;
     /*transform: translateY(-100%);*/
     background-color: #ddd;
     border: none;
