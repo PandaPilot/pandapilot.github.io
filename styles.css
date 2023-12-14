@@ -15,6 +15,14 @@ body {
     /* Additional styling as needed */
 }
 
+.opaque-box {
+    background-color: rgba(255, 255, 255, 0.9); /* White background with 50% opacity */
+    padding: 5px; /* Adjust padding as needed */
+    margin-bottom: 5px; /* Adds space below each translucent box */
+    border-radius: 5px; /* Optional, for rounded corners */
+    /* Additional styling as needed */
+}
+
 .project {
     display: flex;
     align-items: center; /* Aligns items vertically in the center */
