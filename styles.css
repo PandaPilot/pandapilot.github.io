@@ -21,11 +21,6 @@ body {
     margin-bottom: 20px; /* Space between each project */
 }
 
-.description {
-    width: 50%; /* Adjust the width as needed */
-    /* Additional styling for the text */
-}
-
 .carousel {
     position: relative;
     width: 100%;
@@ -56,9 +51,9 @@ iframe {
     aspect-ratio: 16 / 9; /* Standard aspect ratio for YouTube videos */
 }
 
-.slide .description {
+.description {
     padding: 20px;
-    width: 50%;
+    width: 100%;
     /* Additional styling */
 }
 
