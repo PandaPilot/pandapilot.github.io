@@ -37,12 +37,12 @@ body {
 
 .carousel-slides {
     display: flex;
-    /*flex-wrap: nowrap;*/
+    flex-wrap: nowrap;
     transition: transform 0.5s ease;
 }
 
 .slide {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center; /* Horizontally center the contents */
     margin-right: 10%;
