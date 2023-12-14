@@ -41,6 +41,7 @@ body {
     display: flex;
     justify-content: center; /* Horizontally center the contents */
     margin-right: 2%;
+    margin-left: 2%;
 }
 
 .opaque-box {
@@ -72,7 +73,7 @@ iframe {
 
 .prev, .next {
     position: absolute; /*was absolute*/
-    top: 0%;
+    top: 50%;
     transform: translateY(-100%);
     background-color: #ddd;
     border: none;
