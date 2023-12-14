@@ -93,9 +93,9 @@ iframe {
 }
 
 .prev {
-    left: 2.5%;
+    left: 10px;
 }
 
 .next {
-    right: 2.5%;
+    right: 10px;
 }
