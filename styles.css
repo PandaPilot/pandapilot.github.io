@@ -26,12 +26,12 @@ body {
 .project {
     display: flex;
     align-items: center; /* Aligns items vertically in the center */
-    margin-bottom: 20px; /* Space between each project */
+    /*margin-bottom: 20px; /* Space between each project */
 }
 
 .carousel {
     position: relative;
-    width: 80%;
+    width: 90%;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
@@ -90,9 +90,9 @@ iframe {
 }
 
 .prev {
-    left: 0px;
+    left: 5%;
 }
 
 .next {
-    right: 0px;
+    right: 5%;
 }
