@@ -24,15 +24,10 @@ body {
     position: static;
 }
 
-.box1 {
-    position: static;
-    width: 7.5%;
+.carousel-container {
+    position: flex;
+    flex-wrap: nowrap;
 }
-.box2 {
-    position: static;
-    width: 85%;
-}
-
 
 .project {
     display: flex;
