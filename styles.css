@@ -63,6 +63,10 @@ body {
     /*margin-right: 1%;
     margin-left: 1%;*/
 }
+.slide-ends {
+    width: 10%;
+    display: flex;
+}
 
 .opaque-box {
     position: static;
