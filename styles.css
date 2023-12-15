@@ -67,7 +67,7 @@ body {
 .opaque-box {
     position: relative;
     background-color: rgba(255, 255, 255, 1.); /* White background with 50% opacity */
-    padding: 5%; /* Adjust padding as needed */
+    padding: 0%; /* Adjust padding as needed */
     /*margin-bottom: 0px; /* Adds space below each translucent box */
     border-radius: 5px; /* Optional, for rounded corners */
     /* Additional styling as needed */
@@ -94,7 +94,7 @@ iframe {
 
 .prev, .next {
     position: sticky; /*was absolute*/
-    top: 50%;
+    top: 0%;
     /*transform: translateY(-50%);*/
     background-color: #ddd;
     border: none;
@@ -102,7 +102,7 @@ iframe {
     padding: 0;
     cursor: pointer;
     height: 40%;
-    width: 100%;
+    width: 90%;
 }
 
 .prev:hover {
@@ -113,9 +113,9 @@ iframe {
 }
 
 .prev {
-    left: 0px;
+    left: 10%;
 }
 
 .next {
-    right: 0px;
+    right: 10%;
 }
