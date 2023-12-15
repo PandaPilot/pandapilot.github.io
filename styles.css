@@ -99,8 +99,6 @@ iframe {
 }
 
 .prev, .next {
-    display: flex;
-    align-items: center;
     position: sticky; /*was absolute*/
     top: 10%;
     /*transform: translateY(-50%);*/
@@ -112,8 +110,8 @@ iframe {
     height: 40%;
     width: 90%;
     font-weight: bold; /* Makes the arrow bold */
-    font-size: 100%; /* Adjust the size as needed */
-    line-height: 50%; /* Adjust based on your button's height for vertical centering */
+    font-size: 0.3vh; /* Adjust the size as needed */
+    /* line-height: 100%; /* Adjust based on your button's height for vertical centering */
 }
 
 .prev:hover {
