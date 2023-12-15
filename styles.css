@@ -31,24 +31,22 @@ body {
 }
 
 .carousel-container {
-    position: flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    overflow: visible;
     justify-content: center;
+    overflow: visible;
 }
+
 .carousel-buttons {
+    flex: 0 0 6%; /* Do not grow or shrink, set basis to 6% */
     position: relative;
-    top: 0%;
-    width: 6%;
 }
+
 .carousel {
+    flex: 1; /* Allow carousel to grow and fill the space */
     position: relative;
-    top: 0%;
-    width: 85%;
     overflow: hidden;
-    margin-left: 0;
-    margin-right: 0;
 }
 
 .carousel-slides {
