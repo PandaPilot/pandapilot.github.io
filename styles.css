@@ -99,6 +99,8 @@ iframe {
 }
 
 .prev, .next {
+    display: flex;
+    align-items: center;
     position: sticky; /*was absolute*/
     top: 10%;
     /*transform: translateY(-50%);*/
