@@ -24,15 +24,16 @@ body {
     position: static;
 }
 
-.carousel-container {
-    position: flex;
-    flex-wrap: nowrap;
-}
-
 .project {
     display: flex;
     align-items: center; /* Aligns items vertically in the center */
     /*margin-bottom: 20px; /* Space between each project */
+}
+
+.carousel-container {
+    position: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 .carousel {
@@ -93,7 +94,7 @@ iframe {
     background-color: #ddd;
     border: none;
     border-radius: 5px; 
-    /*padding: 10px;*/
+    padding: 0;
     cursor: pointer;
     height: 400px;
     width: 4.5%;
