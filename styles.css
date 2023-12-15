@@ -35,7 +35,11 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
 }
-
+.carousel-buttons {
+    position: relative;
+    top: 0%;
+    width: 6%;
+}
 .carousel {
     position: relative;
     top: 0%;
