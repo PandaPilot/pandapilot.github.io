@@ -88,7 +88,7 @@
             const slides = document.querySelectorAll('.carousel .slide');
             slideIndex = (slideIndex + step + slides.length) % slides.length;
             const x0 = 10/(10+80*slides.length)
-            const offset = - 100* (slideIndex / slides.length * (1-x0) + x0 );
+            const offset = - 100* (slideIndex / slides.length * (1-x0));
             document.querySelector('.carousel-slides').style.transform = `translateX(${offset}%)`;
         }
         
