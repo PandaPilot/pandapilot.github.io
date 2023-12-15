@@ -67,7 +67,7 @@ body {
 .opaque-box {
     position: static;
     display: flex;
-    background-color: rgba(255, 255, 255, 1); /* White background with 100% opacity */
+    background-color: rgba(255, 255, 255, 0.9); /* White background with 100% opacity */
     margin-left: 5%; 
     margin-right: 5%;
     justify-content: center;
