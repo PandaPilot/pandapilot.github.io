@@ -70,7 +70,7 @@ body {
     margin-left: 5%; 
     margin-right: 5%;
     /*margin-bottom: 0px; /* Adds space below each translucent box */
-    border-radius: 5px; /* Optional, for rounded corners */
+    border-radius: 15px; /* Optional, for rounded corners */
     /* Additional styling as needed */
 }
 
@@ -88,7 +88,7 @@ iframe {
 }
 
 .opaque-box .description {
-    /*padding: 5%;*/
+    padding: 5%;
     width: 100%;
     /* Additional styling */
 }
