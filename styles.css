@@ -83,8 +83,8 @@ iframe {
 
 .prev, .next {
     position: sticky; /*was absolute*/
-    top: 0%;
-    transform: translateY(100%);
+    top: 50%;
+    transform: translateY(-50%);
     background-color: #ddd;
     border: none;
     border-radius: 5px; 
