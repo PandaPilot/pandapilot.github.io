@@ -109,8 +109,9 @@ iframe {
     cursor: pointer;
     height: 40%;
     width: 90%;
+    justify-content: center;
     font-weight: bold; /* Makes the arrow bold */
-    font-size: 200px; /* Adjust the size as needed */
+    font-size: 70px; /* Adjust the size as needed */
     /* line-height: 100%; /* Adjust based on your button's height for vertical centering */
 }
 
