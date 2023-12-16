@@ -107,7 +107,7 @@ iframe {
     /*transform: translateY(-50%);*/
     background-color: #ddd;
     border: none;
-    border-radius: 5px; 
+    border-radius: 50%; 
     padding: 0;
     cursor: pointer;
     height: 40%;
@@ -124,11 +124,11 @@ iframe {
 .next:hover {
   background-color: bisque;
 }
-
+/*
 .prev {
     left: 10%;
 }
 
 .next {
     right: 10%;
-}
+}*/
