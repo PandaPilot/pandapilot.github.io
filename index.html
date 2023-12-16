@@ -112,19 +112,21 @@
         
         setCarouselWidth();
 
-        function adjustButtonRadius() {
+        function adjustCornerRadius() {
             const prevButton = document.querySelector('.prev');
             const nextButton = document.querySelector('.next');
+            const carousel = document.querySelector('.carousel');
         
             const size = prevButton.offsetWidth; // Assuming square buttons for a circular shape
             const radius = size / 2;
         
             prevButton.style.borderRadius = `${radius}px`;
             nextButton.style.borderRadius = `${radius}px`;
+            carousel.style.borderRadius = `${radius}px`;
         }
         
-        window.onload = adjustButtonRadius;
-        window.onresize = adjustButtonRadius;
+        window.onload = adjustCornerRadius;
+        window.onresize = adjustCornerRadius;
         
     </script>
 
