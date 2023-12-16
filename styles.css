@@ -107,14 +107,14 @@ iframe {
     /*transform: translateY(-50%);*/
     background-color: #ddd;
     border: none;
-    border-radius: 50%; 
+    border-radius: 100%; 
     padding: 0;
     cursor: pointer;
     height: 40%;
-    width: 90%;
+    width: 100%;
     justify-content: center;
     font-weight: bold; /* Makes the arrow bold */
-    font-size: 70px; /* Adjust the size as needed */
+    font-size: 4em; /* Adjust the size as needed */
     /* line-height: 100%; /* Adjust based on your button's height for vertical centering */
 }
 
