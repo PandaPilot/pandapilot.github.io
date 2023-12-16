@@ -75,6 +75,7 @@ body {
     margin-left: 5%; 
     margin-right: 5%;
     justify-content: center;
+    height: min-content;
     /*margin-bottom: 0px; /* Adds space below each translucent box */
     border-radius: 15px; /* Optional, for rounded corners */
     /* Additional styling as needed */
