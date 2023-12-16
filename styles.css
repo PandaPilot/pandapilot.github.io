@@ -107,7 +107,7 @@ iframe {
     /*transform: translateY(-50%);*/
     background-color: #ddd;
     border: none;
-    border-radius: 100%; 
+    border-radius: 70%; 
     padding: 0;
     cursor: pointer;
     height: 40%;
