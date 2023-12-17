@@ -27,9 +27,8 @@ body {
 
 .centre-box {
     position: static;
-    display: flex;
     width: 100%;
-    justify-content: center;
+    margin: 0 auto;
 }
 
 .project {
