@@ -66,6 +66,7 @@ body {
 
 .carousel-inner {
     margin-top: 10%;
+    height: max-content;
 }
 .carousel-slides {
     display: flex;
@@ -92,7 +93,7 @@ body {
     margin-left: 3%; 
     margin-right: 3%;
     justify-content: center;
-    width: 100%;
+    width: 94%;
     height: min-content;
     /*margin-bottom: 0px; /* Adds space below each translucent box */
     border-radius: 15px; /* Optional, for rounded corners */
