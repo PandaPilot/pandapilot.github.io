@@ -25,9 +25,13 @@ body {
     position: static;
 }
 
-.text-box .carousel {
+.centre-box {
+    position: static;
+    display: flex;
+    width: 100%;
     justify-content: center;
 }
+
 .project {
     display: flex;
     align-items: center; /* Aligns items vertically in the center */
