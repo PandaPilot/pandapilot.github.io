@@ -103,7 +103,16 @@
                             <div class="item"></div>
                         </div>
                     </div>
-                
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                        <li data-target="#myCarousel" data-slide-to="6"></li>
+                    </ol>
                     <!-- Left and right controls -->
                     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -121,12 +130,12 @@
     <script>
         function adjustCornerRadius() {
             const carousel_controls = document.querySelector('.carousel-control');
-            const carousel = document.querySelector('.carousel');
+            const carousel = document.querySelector('.carousel . text-box');
         
             const size = carousel_controls.offsetWidth; // Assuming square buttons for a circular shape
             const radius = size / 2;
         
-            carousel_controls.style.borderRadius = `${radius}px`;
+           // carousel_controls.style.borderRadius = `${radius}px`;
             carousel.style.borderRadius = `${radius}px`;
         }
         
