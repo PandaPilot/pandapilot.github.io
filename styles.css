@@ -69,7 +69,7 @@ body {
     
 }
 
-.item {
+.item active {
     width: 90%;
     height: max-content;
 }
@@ -127,11 +127,10 @@ body {
     width: 90%;
     /* Additional styling */
 }
-
+/*
 .prev, .next {
-    position: sticky; /*was absolute*/
+    position: sticky; 
     top: 10%;
-    /*transform: translateY(-50%);*/
     background-color: #ddd;
     border: none;
     border-radius: 15px; 
@@ -140,9 +139,8 @@ body {
     height: 40%;
     width: 100%;
     justify-content: center;
-    font-weight: bold; /* Makes the arrow bold */
-    font-size: 4em; /* Adjust the size as needed */
-    /* line-height: 100%; /* Adjust based on your button's height for vertical centering */
+    font-weight: bold; 
+    font-size: 4em; 
 }
 
 .prev:hover {
@@ -151,7 +149,7 @@ body {
 .next:hover {
   background-color: bisque;
 }
-/*
+
 .prev {
     left: 10%;
 }
