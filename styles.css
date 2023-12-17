@@ -103,10 +103,15 @@ body {
     /* Adjust size as needed */
 }
 
-iframe {
+.vid_class{
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9; /* Standard aspect ratio for YouTube videos */
+    border-radius: 20px;
+}
+.pdf_class{
+    width: 100%;
+    height: auto;
 }
 
 .opaque-box .description {
