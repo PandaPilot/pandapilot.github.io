@@ -25,6 +25,9 @@ body {
     position: static;
 }
 
+.text-box .carousel {
+    justify-content: center;
+}
 .project {
     display: flex;
     align-items: center; /* Aligns items vertically in the center */
