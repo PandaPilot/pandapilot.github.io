@@ -63,8 +63,9 @@ body {
     text-align: center;
     list-style: none;
 }
+
 .carousel-inner {
-    margin-top: 1vh;
+    margin-top: 10%;
 }
 .carousel-slides {
     display: flex;
