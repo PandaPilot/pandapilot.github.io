@@ -49,17 +49,17 @@ body {
     flex: 1; /* Allow carousel to grow and fill the space */
     position: relative;
     overflow: hidden;
+    justify-content: center;
 }
 
 .carousel-indicators {
-    position: absolute;
+    position: static;
     top: 0%;
     /*left: 50%;
     transform: translateX(-50%);*/
     z-index: 50;
     width: 60%;
     padding-left: 0;
-    margin-left: 0%;
     text-align: center;
     list-style: none;
 }
