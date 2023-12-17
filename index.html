@@ -130,13 +130,13 @@
     <script>
         function adjustCornerRadius() {
             const carousel_controls = document.querySelector('.carousel-control');
-            const carousel = document.querySelector('.carousel . text-box');
-        
+            const carousel_box = document.querySelector('.carousel.slide .text-box');
+
             const size = carousel_controls.offsetWidth; // Assuming square buttons for a circular shape
             const radius = size / 2;
         
            // carousel_controls.style.borderRadius = `${radius}px`;
-            carousel.style.borderRadius = `${radius}px`;
+           carousel_box.style.borderRadius = `${radius}px`;
         }
         
         window.onload = adjustCornerRadius;
