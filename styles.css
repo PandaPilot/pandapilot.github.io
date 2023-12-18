@@ -106,7 +106,7 @@ body {
     display: flex;  
     background-color: rgba(255, 255, 255, 0.9); /* White background with 100% opacity */
     justify-content: center;
-    width: 92%;
+    width: 80%;
     margin: 0 auto; 
     height: min-content;
     /*margin-bottom: 0px; /* Adds space below each translucent box */
