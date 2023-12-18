@@ -23,6 +23,7 @@ body {
 
 .text-box {
     position: static;
+    width: 100%;
 }
 
 .centre-box {
@@ -125,7 +126,7 @@ body {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9; /* Standard aspect ratio for YouTube videos */
-    border-radius: 10em;
+    border-radius: 3em;
 }
 .pdf_class{
     width: 100%;
