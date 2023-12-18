@@ -142,21 +142,41 @@
         window.onload = adjustCornerRadius;
         window.onresize = adjustCornerRadius;
         */
-        function setMaxHeight() {
+        function findMaxHeight() {
             const carousel = document.querySelector('.carousel-inner');
-            const carouselItems = document.querySelectorAll('.carousel-inner .item');
+            const carouselItems = carousel.querySelectorAll('.item');
         
             let maxHeight = 0;
+            let maxWidth = 0;
+        
             carouselItems.forEach(item => {
+                // Temporarily make the item visible to measure its height
+                item.style.display = 'block'; 
+                item.classList.add('active'); // Add 'active' if necessary to ensure full height
+        
                 if (item.offsetHeight > maxHeight) {
                     maxHeight = item.offsetHeight;
+                    maxWidth = item.offsetWidth;
                 }
+
+                // Revert styles after measurement
+                item.style.display = ''; 
+                item.classList.remove('active'); // Remove 'active' to revert to original state
             });
         
             carousel.style.height = `${maxHeight}px`;
+            var H_W_Ratio = maxHeight/maxWidth;
         }
 
-        window.onload = setMaxHeight;
+        function setMaxHeight(){
+            const carousel = document.querySelector('.carousel-inner');
+            const carouselItems = document.querySelectorAll('.carousel-inner .item');
+            let maxWidth = carouselItems.offsetWidth;
+            carousel.style.height = `${H_W_Ratio*maxWidth}px`;
+        }
+        
+
+        window.onload = findMaxHeight;
         window.onresize = setMaxHeight;
         
 
