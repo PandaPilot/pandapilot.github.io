@@ -141,6 +141,24 @@
         window.onload = adjustCornerRadius;
         window.onresize = adjustCornerRadius;
 
+        function setMaxHeight() {
+            const carousel = document.querySelector('.carousel-inner');
+            const carouselItems = document.querySelectorAll('.carousel-inner .item');
+        
+            let maxHeight = 0;
+            carouselItems.forEach(item => {
+                if (item.offsetHeight > maxHeight) {
+                    maxHeight = item.offsetHeight;
+                }
+            });
+        
+            carousel.style.height = `${maxHeight}px`;
+        }
+
+        window.onload = setMaxHeight;
+        window.onresize = setMaxHeight;
+        
+
         $('#myCarousel').on('slid.bs.carousel', function () {
             // Get the index of the currently active slide
             var activeIndex = $(this).find('.carousel-indicators li.active').data('slide-to');
