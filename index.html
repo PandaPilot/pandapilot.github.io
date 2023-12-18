@@ -144,7 +144,7 @@
         */
         var H_W_Ratio;
 
-        function findMaxHeight(H_W_Ratio) {
+        function findMaxHeight() {
             const carousel = document.querySelector('.carousel-inner');
             const carouselItems = carousel.querySelectorAll('.item');
         
@@ -178,7 +178,7 @@
         }
         
 
-        window.onload = findMaxHeight(H_W_Ratio);
+        window.onload = findMaxHeight;
         window.onresize = setMaxHeight;
         
 
