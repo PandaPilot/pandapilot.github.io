@@ -105,10 +105,9 @@ body {
     position: static;
     display: flex;  
     background-color: rgba(255, 255, 255, 0.9); /* White background with 100% opacity */
-    margin-left: 3%; 
-    margin-right: 3%;
     justify-content: center;
     width: 92%;
+    margin: 0 auto; 
     height: min-content;
     /*margin-bottom: 0px; /* Adds space below each translucent box */
     border-radius: 15px; /* Optional, for rounded corners */
@@ -130,7 +129,7 @@ body {
 }
 .pdf_class{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .opaque-box .description {
