@@ -115,7 +115,7 @@ p {
     margin: 0 auto; 
     height: min-content;
     /*margin-bottom: 0px; /* Adds space below each translucent box */
-    border-radius: 15px; /* Optional, for rounded corners */
+    border-radius: 50em; /* Optional, for rounded corners */
     /* Additional styling as needed */
 }
 
@@ -134,7 +134,8 @@ p {
 }
 .pdf_class {
     width: 100%;
-    height: 100em;
+    height: 90em;
+    margin-bottom: 2em;
 }
 
 .opaque-box .description {
