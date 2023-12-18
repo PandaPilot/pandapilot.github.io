@@ -142,6 +142,8 @@
         window.onload = adjustCornerRadius;
         window.onresize = adjustCornerRadius;
         */
+        var H_W_Ratio;
+
         function findMaxHeight() {
             const carousel = document.querySelector('.carousel-inner');
             const carouselItems = carousel.querySelectorAll('.item');
