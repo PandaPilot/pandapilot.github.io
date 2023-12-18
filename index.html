@@ -153,16 +153,16 @@
         
             carouselItems.forEach(item => {
                 // Temporarily make the item visible to measure its height
-                item.style.display = 'block'; 
+
                 item.classList.add('active'); // Add 'active' if necessary to ensure full height
         
-                if (item.offsetHeight > maxHeight) {
-                    maxHeight = item.offsetHeight;
-                    maxWidth = item.offsetWidth;
+                if (carousel.offsetHeight > maxHeight) {
+                    maxHeight = carousel.offsetHeight;
+                    maxWidth = carousel.offsetWidth;
                 }
 
                 // Revert styles after measurement
-                item.style.display = ''; 
+
                 item.classList.remove('active'); // Remove 'active' to revert to original state
             });
         
