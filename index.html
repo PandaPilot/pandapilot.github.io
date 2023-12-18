@@ -144,7 +144,7 @@
         */
         var H_W_Ratio;
 
-        function findMaxHeight() {
+        function findMaxHeight(H_W_Ratio) {
             const carousel = document.querySelector('.carousel-inner');
             const carouselItems = carousel.querySelectorAll('.item');
         
@@ -167,7 +167,7 @@
             });
         
             carousel.style.height = `${maxHeight}px`;
-            var H_W_Ratio = maxHeight/maxWidth;
+            H_W_Ratio = maxHeight/maxWidth;
         }
 
         function setMaxHeight(){
@@ -178,7 +178,7 @@
         }
         
 
-        window.onload = findMaxHeight;
+        window.onload = findMaxHeight(H_W_Ratio);
         window.onresize = setMaxHeight;
         
 
