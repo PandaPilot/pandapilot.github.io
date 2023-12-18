@@ -115,7 +115,7 @@ p {
     margin: 0 auto; 
     height: min-content;
     /*margin-bottom: 0px; /* Adds space below each translucent box */
-    border-radius: 50em; /* Optional, for rounded corners */
+    border-radius: 5em; /* Optional, for rounded corners */
     /* Additional styling as needed */
 }
 
