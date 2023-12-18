@@ -80,6 +80,7 @@ p {
     display: block;
     margin-top: 5%;
     margin-bottom: 5%;
+    max-width: 2000px;
 }
 
 .item active {
