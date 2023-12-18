@@ -167,9 +167,26 @@
             carousel.style.height = `${maxHeight}px`;
             // H_W_Ratio = maxHeight/carousel.offsetWidth;
         }     
-
+        function debounce(func, wait, immediate) {
+            var timeout;
+            return function() {
+                var context = this, args = arguments;
+                var later = function() {
+                    timeout = null;
+                    if (!immediate) func.apply(context, args);
+                };
+                var callNow = immediate && !timeout;
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+                if (callNow) func.apply(context, args);
+            };
+        };
+        
+        var debouncedFindMaxHeight = debounce(function() {
+            findMaxHeight();
+        }, 250);
         window.onload = findMaxHeight;
-        window.onresize = findMaxHeight;
+        window.onresize = debouncedFindMaxHeight;
         
         $('#myCarousel').on('slid.bs.carousel', function () {
             // Get the index of the currently active slide
