@@ -165,15 +165,14 @@
 
                 item.classList.remove('active'); // Remove 'active' to revert to original state
             });
-        
+            carouselItems.item[0].classList.add('active');
             carousel.style.height = `${maxHeight}px`;
             H_W_Ratio = maxHeight/maxWidth;
         }
 
         function setMaxHeight(){
             const carousel = document.querySelector('.carousel-inner');
-            const carouselItems = document.querySelectorAll('.carousel-inner .item');
-            let maxWidth = carouselItems.offsetWidth;
+            let maxWidth = carousel.offsetWidth;
             carousel.style.height = `${H_W_Ratio*maxWidth}px`;
         }
         
