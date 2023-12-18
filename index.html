@@ -142,12 +142,12 @@
         window.onload = adjustCornerRadius;
         window.onresize = adjustCornerRadius;
         */
-        var H_W_Ratio;
 
         function findMaxHeight() {
             const carousel = document.querySelector('.carousel-inner');
             const carouselItems = carousel.querySelectorAll('.item');
-        
+            const activeSlide = document.querySelector('.carousel-inner .item.active');
+
             let maxHeight = 0;
         
             carouselItems.forEach(item => {
@@ -163,22 +163,14 @@
 
                 item.classList.remove('active'); // Remove 'active' to revert to original state
             });
-            carouselItems[0].classList.add('active');
+            activeSlide.classList.add('active');
             carousel.style.height = `${maxHeight}px`;
-            H_W_Ratio = maxHeight/carousel.offsetWidth;
-        }
-
-        function setMaxHeight(){
-            const carousel = document.querySelector('.carousel-inner');
-            let maxWidth = carousel.offsetWidth;
-            carousel.style.height = `${H_W_Ratio*maxWidth}px`;
-        }
-        
+            // H_W_Ratio = maxHeight/carousel.offsetWidth;
+        }     
 
         window.onload = findMaxHeight;
         window.onresize = findMaxHeight;
         
-
         $('#myCarousel').on('slid.bs.carousel', function () {
             // Get the index of the currently active slide
             var activeIndex = $(this).find('.carousel-indicators li.active').data('slide-to');
