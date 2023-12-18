@@ -9,6 +9,9 @@ body {
     margin-top: 3vh
 }
 
+p {
+    font-size: 30px;
+}
 .translucent-box {
     position: static;
     display: flex;
