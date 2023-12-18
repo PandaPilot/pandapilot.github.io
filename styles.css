@@ -136,6 +136,10 @@ body {
     width: 90%;
     /* Additional styling */
 }
+
+.carousel-control {
+    width: 10%;
+}
 /*
 .prev, .next {
     position: sticky; 
