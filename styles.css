@@ -23,6 +23,7 @@ p {
     display: flex;
     background-color: #fff;
     justify-content: center;
+    top: 0%;
 }
 .translucent-box {
     position: static;
