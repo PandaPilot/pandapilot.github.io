@@ -20,10 +20,11 @@ p {
 }
 .nav {
     position: sticky;
+    top: 0;
     display: flex;
     background-color: #fff;
     justify-content: center;
-    top: 0%;
+    z-index: 70;
 }
 .translucent-box {
     position: static;
