@@ -87,7 +87,7 @@ p {
 }
 
 .carousel-indicators {
-    position: static;
+    position: relative;
     display: flex;
     width: 100%;
     z-index: 12;
