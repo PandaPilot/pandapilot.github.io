@@ -79,8 +79,8 @@ p {
 }
 
 .carousel {
-    flex: 1; /* Allow carousel to grow and fill the space */
-    position: relative;
+    /* flex: 1; Allow carousel to grow and fill the space */
+    position: static;
     overflow: hidden;
     justify-content: center;
     margin-top: 3%;
@@ -120,7 +120,7 @@ p {
 
 .slide {
     width: 80%;
-    display: flex;
+    
 }
 
 .slide-ends {
