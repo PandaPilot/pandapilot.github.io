@@ -96,6 +96,7 @@ p {
 }
 
 .carousel-inner {
+    position: static;
     display: block;
     margin-top: 3%;
     margin-bottom: 3%;
@@ -154,7 +155,7 @@ p {
 }
 .pdf_class {
     width: 100%;
-    aspect-ratio: 0.5; /* width to height*/
+    aspect-ratio: 0.8; /* width to height*/
     margin-bottom: 2em;
 }
 
