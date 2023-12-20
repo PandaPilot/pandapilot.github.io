@@ -154,7 +154,7 @@ p {
 }
 .pdf_class {
     width: 100%;
-    aspect-ratio: 0.7; /* width to height*/
+    aspect-ratio: 0.6; /* width to height*/
     margin-bottom: 2em;
 }
 
@@ -172,33 +172,3 @@ p {
     position: sticky;
     top: 50%;
 }
-/*
-.prev, .next {
-    position: sticky; 
-    top: 10%;
-    background-color: #ddd;
-    border: none;
-    border-radius: 15px; 
-    padding: 0;
-    cursor: pointer;
-    height: 40%;
-    width: 100%;
-    justify-content: center;
-    font-weight: bold; 
-    font-size: 4em; 
-}
-
-.prev:hover {
-  background-color: bisque;
-} 
-.next:hover {
-  background-color: bisque;
-}
-
-.prev {
-    left: 10%;
-}
-
-.next {
-    right: 10%;
-}*/
