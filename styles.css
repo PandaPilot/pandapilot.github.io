@@ -99,6 +99,7 @@ p {
     margin-top: 5%;
     margin-bottom: 5%;
     max-width: 2000px;
+    z-index:15;
 }
 
 .item active {
