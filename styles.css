@@ -18,7 +18,7 @@ body {
 p {
     font-size: 16px;
 }
-.nav {
+.floater {
     position: sticky;
     top: 0;
     display: flex;
