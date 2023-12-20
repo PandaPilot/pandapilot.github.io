@@ -84,7 +84,7 @@ p {
 }
 
 .carousel-indicators {
-    position: absolute;
+    position: static;
     /*top: 0%;
     left: 50%;
     transform: translateX(-50%);*/
