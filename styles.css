@@ -26,6 +26,11 @@ p {
     justify-content: left;
     z-index: 70;
 }
+
+.logo {
+    max-height: 3em;
+    height: 100%;
+}
 .translucent-box {
     position: static;
     display: flex;
