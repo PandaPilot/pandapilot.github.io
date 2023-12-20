@@ -154,7 +154,7 @@ p {
 }
 .pdf_class {
     width: 100%;
-    aspect-ratio: 0.6; /* width to height*/
+    aspect-ratio: 0.5; /* width to height*/
     margin-bottom: 2em;
 }
 
