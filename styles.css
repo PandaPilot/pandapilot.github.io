@@ -165,6 +165,10 @@ p {
 .carousel-control {
     width: 10%;
 }
+.glyphicon {
+    position: sticky;
+    top: 50%;
+}
 /*
 .prev, .next {
     position: sticky; 
