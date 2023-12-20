@@ -52,10 +52,8 @@ p {
 .centre-box {
     position: static;
     display: flex;
-    flex-direction: row;
     width: 100%;
     justify-content: center;
-    flex-wrap: nowrap;
 }
 
 .project {
@@ -89,13 +87,13 @@ p {
 
 .carousel-indicators {
     position: static;
-    /*top: 0%;*/
+    /*top: 0%;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
+    width: 100%;*/
     z-index: 12;
-    /*padding-left: 0;*/
-    text-align: center;
+    /*padding-left: 0;
+    text-align: center;*/
     list-style: none;
 }
 
