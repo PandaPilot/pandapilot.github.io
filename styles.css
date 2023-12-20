@@ -23,7 +23,7 @@ p {
     top: 0;
     display: flex;
     background-color: #fff;
-    justify-content: center;
+    justify-content: left;
     z-index: 70;
 }
 .translucent-box {
