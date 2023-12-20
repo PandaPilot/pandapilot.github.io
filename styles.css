@@ -34,7 +34,7 @@ p {
 .translucent-box {
     position: static;
     display: flex;
-    background-color: rgba(235, 235, 235, 0.7); /* White background with 50% opacity */
+    background-color: rgba(255, 255, 255, 0.7); /* White background with 50% opacity */
     padding: 5%; /* Adjust padding as needed */
     margin-top: 3vh;
     margin-bottom: 3vh; /* Adds space below each translucent box */
@@ -134,7 +134,7 @@ p {
     margin: 0 auto; 
     height: min-content;
     /*margin-bottom: 0px; /* Adds space below each translucent box */
-    border-radius: 4em; /* Optional, for rounded corners */
+    border-radius: 20px; /* Optional, for rounded corners */
     /* Additional styling as needed */
 }
 
