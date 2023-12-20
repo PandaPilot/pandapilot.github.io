@@ -151,7 +151,7 @@ p {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9; /* Standard aspect ratio for YouTube videos */
-    border-radius: 3em;
+    border-radius: 25px;
 }
 .pdf_class {
     width: 100%;
