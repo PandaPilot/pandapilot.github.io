@@ -52,8 +52,10 @@ p {
 .centre-box {
     position: static;
     display: flex;
+    flex-direction: row;
     width: 100%;
     justify-content: center;
+    flex-wrap: nowrap;
 }
 
 .project {
