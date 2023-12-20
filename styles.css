@@ -88,8 +88,11 @@ p {
 
 .carousel-indicators {
     position: static;
+    display: flex;
     width: 100%;
     z-index: 12;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     list-style: none;
 }
