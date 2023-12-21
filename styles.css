@@ -141,7 +141,7 @@ p {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9; /* Standard aspect ratio for YouTube videos */
-    border-radius: 25px;
+    border-radius: 2em;
 }
 .pdf_class {
     width: 100%;
@@ -157,7 +157,8 @@ p {
 
 .carousel-control {
     width: 10%;
-    height: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
     z-index: 30;
 }
 .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
