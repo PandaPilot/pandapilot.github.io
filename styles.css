@@ -156,10 +156,8 @@ p {
 }
 
 .carousel-control {
-    width: 10%;
-    z-index: 30;
-}
-.glyphicon {
     position: sticky;
     top: 50%;
+    width: 10%;
+    z-index: 30;
 }
