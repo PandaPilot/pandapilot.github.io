@@ -1,7 +1,7 @@
 function findMaxHeight() {
     const carousel = document.querySelector('.carousel-inner');
-    const carouselItems = carousel.querySelectorAll('.item');
-    const activeSlide = document.querySelector('.carousel-inner .item.active');
+    const carouselItems = carousel.querySelectorAll('.carousel-item');
+    const activeSlide = document.querySelector('.carousel-inner .carousel-item.active');
 
     let maxHeight = 0;
 
@@ -21,7 +21,8 @@ function findMaxHeight() {
     activeSlide.classList.add('active');
     carousel.style.height = `${maxHeight}px`;
     // H_W_Ratio = maxHeight/carousel.offsetWidth;
-}     
+}
+
 function debounce(func, wait, immediate) {
     var timeout;
     return function() {
