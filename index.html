@@ -10,8 +10,6 @@
     <link rel="manifest" href="icon/site.webmanifest">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <nav class="floater">
@@ -166,79 +164,10 @@
                 <p>Joanna Wormald. (2017). "<a href="https://f001.backblazeb2.com/file/felixonlinearchive/issues/pdfs/felix_1678.pdf">New laws introduced to regulate drones</a>". <em>Felix</em>, Issue 1678.</p>
             </div>
         </div>
-    </section>            
-    <script>
-        /*
-        function adjustCornerRadius() {
-            const carousel_controls = document.querySelector('.carousel-control');
-            const carousel_box = document.querySelector('.carousel.slide');
-
-            const size = carousel_controls.offsetWidth; // Assuming square buttons for a circular shape
-            const radius = size / 2;
-        
-           // carousel_controls.style.borderRadius = `${radius}px`;
-           carousel_box.style.borderRadius = `${radius}px`;
-        }
-        
-        window.onload = adjustCornerRadius;
-        window.onresize = adjustCornerRadius;
-        */
-
-        function findMaxHeight() {
-            const carousel = document.querySelector('.carousel-inner');
-            const carouselItems = carousel.querySelectorAll('.item');
-            const activeSlide = document.querySelector('.carousel-inner .item.active');
-
-            let maxHeight = 0;
-        
-            carouselItems.forEach(item => {
-                // Temporarily make the item visible to measure its height
-
-                item.classList.add('active'); // Add 'active' if necessary to ensure full height
-        
-                if (carousel.offsetHeight > maxHeight) {
-                    maxHeight = carousel.offsetHeight;
-                }
-
-                // Revert styles after measurement
-
-                item.classList.remove('active'); // Remove 'active' to revert to original state
-            });
-            activeSlide.classList.add('active');
-            carousel.style.height = `${maxHeight}px`;
-            // H_W_Ratio = maxHeight/carousel.offsetWidth;
-        }     
-        function debounce(func, wait, immediate) {
-            var timeout;
-            return function() {
-                var context = this, args = arguments;
-                var later = function() {
-                    timeout = null;
-                    if (!immediate) func.apply(context, args);
-                };
-                var callNow = immediate && !timeout;
-                clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
-                if (callNow) func.apply(context, args);
-            };
-        };
-        
-        var debouncedFindMaxHeight = debounce(function() {
-            findMaxHeight();
-        }, 250);
-        window.onload = findMaxHeight;
-        window.onresize = debouncedFindMaxHeight;
-        
-        $('#myCarousel').on('slid.bs.carousel', function () {
-            // Get the index of the currently active slide
-            var activeIndex = $(this).find('.carousel-indicators li.active').data('slide-to');
-        
-            // Update the indicators in both sets
-            $('.carousel-indicators').each(function() {
-                $(this).find('li').removeClass('active').eq(activeIndex).addClass('active');
-            });
-        });
-     
-    </script>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.scrolly@0.0.1/jquery.scrolly.min.js"></script>          
+    <script src="scripts/local.js.txt""></script>
 </body>
 </html>
