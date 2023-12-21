@@ -57,7 +57,7 @@ nav ul a {
 }
 
 .floater {
-    position: sticky;
+    position: static;
     top: 0;
     display: flex;
     flex-wrap: nowrap;
@@ -73,6 +73,7 @@ nav ul a {
     position: relative;
     left: 0;
     top: 0;
+    max-height: 4em;
 }
 
 @media (min-width: 800px) { /* Adjust 800px to your preference */
