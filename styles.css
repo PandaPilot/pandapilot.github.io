@@ -22,9 +22,11 @@ p {
     position: sticky;
     top: 0;
     display: flex;
+    flex-wrap: nowrap;
     background-color: #fff;
     justify-content: left;
     z-index: 70;
+    text-transform: uppercase;
 }
 
 .logo {
