@@ -50,7 +50,7 @@ p {
 }
 
 .centre-box {
-    position: static;
+    position: relative;
     display: flex;
     width: 100%;
     justify-content: center;
