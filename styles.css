@@ -13,7 +13,6 @@ body {
     background-position: right bottom;
     background-attachment: fixed;
     font-family: Couture, 'Gill Sans', Arial, sans-serif;
-    margin-top: 3vh
 }
 
 p {
@@ -34,6 +33,7 @@ nav > ul {
     list-style: none;
     padding: 0;
 }
+
 nav ul a {
     -moz-transition: color 0.2s ease;
     -webkit-transition: color 0.2s ease;
@@ -63,6 +63,7 @@ nav ul a {
     justify-content: center;
     z-index: 70;
     max-height: 2em;
+    border-top: .5rem solid #000;
 }
 
 .logo {
