@@ -43,16 +43,20 @@ var debouncedFindMaxHeight = debounce(function() {
 }, 250);
 window.onload = findMaxHeight;
 window.onresize = debouncedFindMaxHeight;
-/*
-$('#myCarousel').on('slid.bs.carousel', function () {
-    // Get the index of the currently active slide
-    var activeIndex = $(this).find('.carousel-indicators button.active').data('slide-to');
 
-    // Update the indicators in both sets
-    $('.carousel-indicators').each(function() {
-        $(this).find('button').removeClass('active').eq(activeIndex).addClass('active');
+var myCarousel = document.querySelector('#myCarousel');
+
+myCarousel.addEventListener('slid.bs.carousel', function () {
+    var activeIndex = this.querySelector('.carousel-indicators .active').getAttribute('data-bs-slide-to');
+
+    // Update the indicators
+    var indicators = this.querySelectorAll('.carousel-indicators button');
+    indicators.forEach(function(indicator) {
+        indicator.classList.remove('active');
     });
+    indicators[activeIndex].classList.add('active');
 });
+
 /*
 document.addEventListener('DOMContentLoaded', function() {
     if ('ontouchstart' in window) {
