@@ -45,11 +45,14 @@ nav ul {
     display: flex;
     flex-wrap: nowrap;
     background-color: #fff;
-    justify-content: left;
+    justify-content: center;
     z-index: 70;
 }
 
 .logo {
+    position: relative;
+    left: 0;
+    top: 0;
     max-height: 4em;
     height: 100%;
 }
