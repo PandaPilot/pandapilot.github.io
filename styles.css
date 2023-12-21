@@ -160,6 +160,6 @@ p {
     z-index: 30;
 }
 .glyphicon {
-    position: absolute;
+    position: sticky;
     top: 50%;
 }
