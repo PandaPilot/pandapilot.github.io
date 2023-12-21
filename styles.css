@@ -98,7 +98,7 @@ p {
 .carousel-inner {
     position: static;
     display: block;
-    
+    overflow:visible;
     max-width: 2000px;
     z-index:15;
 }
