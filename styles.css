@@ -157,14 +157,11 @@ p {
     /* Additional styling */
 }
 
-/*.carousel-control {
-    width: 10%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    z-index: 30;
-}*/
 .carousel-control-prev .carousel-control-prev-icon, .carousel-control-next .carousel-control-next-icon {
     position: sticky;
+    margin-top: 5%;
+    margin-bottom: 5%;
     top: 50%;
+    z-index: 30;
     transform: translateY(-50%);
 }
