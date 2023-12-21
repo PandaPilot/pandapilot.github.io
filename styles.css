@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    display: block;
     text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     background-image: url("Robot_Repair_background2.png");
@@ -156,12 +157,14 @@ p {
     margin-bottom: 2em;
     /* Additional styling */
 }
+.carousel-control-prev, .carousel-control-next {
+    z-index: 30;
 
+}
 .carousel-control-prev .carousel-control-prev-icon, .carousel-control-next .carousel-control-next-icon {
     position: sticky;
     margin-top: 5%;
     margin-bottom: 5%;
     top: 50%;
-    z-index: 30;
     transform: translateY(-50%);
 }
