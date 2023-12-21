@@ -43,7 +43,7 @@ var debouncedFindMaxHeight = debounce(function() {
 }, 250);
 window.onload = findMaxHeight;
 window.onresize = debouncedFindMaxHeight;
-
+/*
 $('#myCarousel').on('slid.bs.carousel', function () {
     // Get the index of the currently active slide
     var activeIndex = $(this).find('.carousel-indicators button.active').data('slide-to');
