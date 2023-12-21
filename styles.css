@@ -26,6 +26,7 @@ nav ul {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    text-align: center;
     height: inherit;
     line-height: inherit;
     margin: 0;
