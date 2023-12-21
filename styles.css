@@ -157,8 +157,8 @@ p {
 
 .carousel-control {
     width: 10%;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     z-index: 30;
 }
 .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
