@@ -36,7 +36,7 @@ p {
 .translucent-box {
     position: static;
     display: flex;
-    background-color: rgba(255, 255, 255, 0.7); /* White background with 50% opacity */
+    background-color: rgba(255, 255, 255, 0.9); /* White background with 50% opacity */
     padding: 3em; /* Adjust padding as needed */
     margin-top: 3vh;
     margin-bottom: 3vh; /* Adds space below each translucent box */
