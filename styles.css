@@ -74,6 +74,17 @@ nav ul a {
     top: 0;
     height: 100%;
 }
+
+@media (min-width: 800px) { /* Adjust 800px to your preference */
+    .nav {
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 100vh; /* Full height of the viewport */
+        /* Additional styling for vertical layout */
+    }
+}
+
 .translucent-box {
     position: static;
     display: flex;
