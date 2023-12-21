@@ -48,13 +48,13 @@ nav ul {
     background-color: #fff;
     justify-content: center;
     z-index: 70;
+    max-height: 2em;
 }
 
 .logo {
     position: relative;
     left: 0;
     top: 0;
-    max-height: 4em;
     height: 100%;
 }
 .translucent-box {
