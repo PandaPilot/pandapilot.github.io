@@ -50,6 +50,6 @@ $('#myCarousel').on('slid.bs.carousel', function () {
 
     // Update the indicators in both sets
     $('.carousel-indicators').each(function() {
-        $(this).find('li').removeClass('active').eq(activeIndex).addClass('active');
+        $(this).find('button').removeClass('active').eq(activeIndex).addClass('active');
     });
 });
