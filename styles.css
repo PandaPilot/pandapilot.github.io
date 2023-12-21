@@ -21,6 +21,20 @@ p {
 }
 
 nav ul {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    height: inherit;
+    line-height: inherit;
+    margin: 0;
+}
+
+nav > ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul a {
     -moz-transition: color 0.2s ease;
     -webkit-transition: color 0.2s ease;
     -ms-transition: color 0.2s ease;
@@ -35,7 +49,6 @@ nav ul {
     outline: 0;
     padding: 0.6em 0;
     position: relative;
-    list-style: none;
     text-decoration: none;
     text-transform: uppercase;
 }
