@@ -157,13 +157,13 @@ p {
     /* Additional styling */
 }
 
-.carousel-control {
+/*.carousel-control {
     width: 10%;
     margin-top: 5%;
     margin-bottom: 5%;
     z-index: 30;
-}
-.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+}*/
+.carousel-control-prev .carousel-control-prev-icon, .carousel-control-next .carousel-control-next-icon {
     position: sticky;
     top: 50%;
     transform: translateY(-50%);
