@@ -54,10 +54,11 @@ nav ul a {
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
+    top: 25%;
 }
 
 .floater {
-    position: static;
+    position: fixed;
     top: 0;
     display: flex;
     flex-wrap: nowrap;
@@ -73,6 +74,7 @@ nav ul a {
     position: relative;
     left: 0;
     top: 0;
+    height: 100%;
     max-height: 4em;
 }
 
