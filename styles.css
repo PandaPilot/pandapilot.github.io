@@ -76,13 +76,12 @@ nav ul a {
 }
 
 @media (min-width: 800px) { /* Adjust 800px to your preference */
-    .floater {
+    /*.floater {
         top: 0;
         left: 0;
         width: auto;
-        height: 100vh; /* Full height of the viewport */
-        /* Additional styling for vertical layout */
-    }
+        height: 100vh; 
+    }*/
 }
 
 .translucent-box {
