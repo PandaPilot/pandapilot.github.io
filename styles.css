@@ -45,7 +45,7 @@ p {
 }
 
 .text-box {
-    position: static;
+    position: relative;
     width: 100%;
 }
 
@@ -157,9 +157,10 @@ p {
 
 .carousel-control {
     width: 10%;
+    height: 100%;
     z-index: 30;
     top: 50%;
-    transform: translateY(-50%);
+    
 }
 .glyphicon {
     position: sticky;
