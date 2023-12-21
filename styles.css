@@ -64,7 +64,7 @@ nav ul a {
     background-color: #fff;
     justify-content: space-between;
     z-index: 70;
-    max-height: 2em;
+    max-height: 4em;
     border-top: .5rem solid #000;
 }
 
@@ -76,7 +76,7 @@ nav ul a {
 }
 
 @media (min-width: 800px) { /* Adjust 800px to your preference */
-    .nav {
+    .floater {
         top: 0;
         left: 0;
         width: auto;
