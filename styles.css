@@ -69,7 +69,7 @@ nav ul a {
 }
 
 .logo {
-    position: absolute;
+    position: relative;
     left: 0;
     top: 0;
     height: 100%;
