@@ -78,13 +78,10 @@ nav ul a {
     max-height: 4em;
 }
 
-@media (min-width: 800px) { /* Adjust 800px to your preference */
-    /*.floater {
-        top: 0;
-        left: 0;
-        width: auto;
-        height: 100vh; 
-    }*/
+@media (max-width: 800px) { /* Adjust 600px to your preference for the 'narrow' threshold */
+    nav ul {
+        display: none; /* Hide the container on screens narrower than 600px */
+    }
 }
 
 .translucent-box {
