@@ -140,12 +140,12 @@ nav ul a {
     margin-bottom: 3%;
     width: 90%;
 }
-
+/*
 #myCarousel.touch-screen {
     width: 100%;
-    /* Other styles for touch-screen devices */
+     Other styles for touch-screen devices 
 }
-
+*/
 .carousel-indicators {
     position: relative;
     width: 100%;
