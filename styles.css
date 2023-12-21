@@ -24,6 +24,8 @@ nav ul {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
+    width: 100%;
+    justify-content: space-evenly;
     height: inherit;
     line-height: inherit;
     margin: 0;
@@ -60,7 +62,7 @@ nav ul a {
     flex-wrap: nowrap;
     width: 100%;
     background-color: #fff;
-    justify-content: center;
+    justify-content: space-between;
     z-index: 70;
     max-height: 2em;
     border-top: .5rem solid #000;
