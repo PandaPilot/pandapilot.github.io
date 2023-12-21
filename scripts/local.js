@@ -46,7 +46,7 @@ window.onresize = debouncedFindMaxHeight;
 
 $('#myCarousel').on('slid.bs.carousel', function () {
     // Get the index of the currently active slide
-    var activeIndex = $(this).find('.carousel-indicators li.active').data('slide-to');
+    var activeIndex = $(this).find('.carousel-indicators button.active').data('slide-to');
 
     // Update the indicators in both sets
     $('.carousel-indicators').each(function() {
