@@ -53,7 +53,7 @@ $('#myCarousel').on('slid.bs.carousel', function () {
         $(this).find('button').removeClass('active').eq(activeIndex).addClass('active');
     });
 });
-
+/*
 document.addEventListener('DOMContentLoaded', function() {
     if ('ontouchstart' in window) {
         // Touch support detected
@@ -63,3 +63,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+*/
