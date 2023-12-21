@@ -160,7 +160,7 @@ p {
     height: 100%;
     z-index: 30;
 }
-.glyphicon-chevron-left .glyphicon-chevron-right {
+.glyphicon-chevron-left, .glyphicon-chevron-right {
     position: sticky;
     top: 50%;
     transform: translateY(-50%);
