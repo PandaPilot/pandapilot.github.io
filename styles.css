@@ -58,7 +58,7 @@ nav ul a {
 }
 
 .floater {
-    position: fixed;
+    position: sticky;
     top: 0;
     display: flex;
     flex-wrap: nowrap;
