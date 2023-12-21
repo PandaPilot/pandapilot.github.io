@@ -19,6 +19,26 @@ body {
 p {
     font-size: 16px;
 }
+
+nav a {
+    -moz-transition: color 0.2s ease;
+    -webkit-transition: color 0.2s ease;
+    -ms-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+    border: 0;
+    /*color: rgba(255, 255, 255, 0.45);*/
+    display: block;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 0.25em;
+    line-height: 1.75;
+    outline: 0;
+    padding: 0.6em 0;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 .floater {
     position: sticky;
     top: 0;
@@ -27,7 +47,6 @@ p {
     background-color: #fff;
     justify-content: left;
     z-index: 70;
-    text-transform: uppercase;
 }
 
 .logo {
