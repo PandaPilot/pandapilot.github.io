@@ -102,6 +102,10 @@ nav ul a {
     width: 100%;
 }
 
+#intro .text-box {
+    margin-top: 2em;
+}
+
 .centre-box {
     position: relative;
     display: flex;
