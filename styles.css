@@ -107,9 +107,10 @@ nav ul a {
 .text-box {
     position: sticky;
     top: 0;
-    left: 0;
-    width: 100vw;
-    padding: 3vh 7.5vw;
+    left: 50;
+    transform: translate(-50%, 0%);
+    width: 90vw;
+    padding-top: 7.5vw;
 }
 
 #intro .text-box {
