@@ -114,6 +114,10 @@ nav ul a {
     color: rgba(0, 0, 0, 1.0); /* Example color, change as needed */
 }
 
+.project-box {
+    width: 100%;
+}
+
 .sticky-view_more {
     position: fixed;
     top: 50%;  /* Adjust these to place your text */
