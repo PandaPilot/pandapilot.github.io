@@ -72,7 +72,7 @@ nav ul a {
     border: 0;
     color: rgba(0, 0, 0, 0.65);*/
     display: block;
-    font-size: 0.7em;
+    font-size: 1em;
     font-weight: bold;
     letter-spacing: 0.25em;
     line-height: 1.75;
@@ -112,7 +112,7 @@ nav ul a {
 
 .scrolly.active, .scrolly:focus {
     color: #000000; /* Example color, change as needed */
-    text-shadow: 2px 2px 2px #000000;
+    font-size: 1.25em;
 }
 
 
