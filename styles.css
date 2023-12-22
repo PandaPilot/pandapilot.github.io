@@ -115,6 +115,10 @@ nav ul a {
     /*margin-bottom: 20px; /* Space between each project */
 }
 
+.square-box {
+    width: 100vw;
+    height:100vw;
+}
 .carousel-container {
     display: flex;
     flex-direction: row;
