@@ -98,11 +98,11 @@ nav ul a {
     top: 0;
     left: 0;
     width: 100vw;
-    padding: 3em; 
+    padding: 3vh 7.5vw;
 }
 
 #intro .text-box {
-    margin-top: 2em;
+    padding-top: 8vh;
 }
 
 .centre-box {
