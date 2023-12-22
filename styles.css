@@ -60,6 +60,7 @@ nav ul a {
 .floater {
     position: sticky;
     top: 0;
+    left:0;
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
