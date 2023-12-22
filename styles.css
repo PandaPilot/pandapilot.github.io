@@ -33,8 +33,9 @@ p {
     border-top: .5rem solid #000;
 }
 
-nav a {
-    display: flex;
+.floater a {
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
@@ -106,7 +107,7 @@ nav ul a {
 }
 
 #intro .text-box {
-    padding-top: 8vh;
+    padding-top: 5.5em;
 }
 
 .centre-box {
