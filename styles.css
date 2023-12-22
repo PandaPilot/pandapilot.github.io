@@ -6,13 +6,12 @@ body {
     display: block;
     text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    background-image: url("Robot_Repair_background2.png");
-    background-color: #aa8899;
+    background-color: #ffffff;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right bottom;
     background-attachment: fixed;
-    font-family: Couture, 'Gill Sans', Arial, sans-serif;
+    font-family: Couture, Arial,'Gill Sans', sans-serif;
 }
 
 p {
@@ -110,6 +109,13 @@ nav ul a {
     justify-content: center;
 }
 
+.square-box img {
+    height: 100%;
+    width: auto;
+    /* margin-right: 20px; /* Space between the image and the text */
+    /* Adjust size as needed */
+}
+
 .project {
     display: flex;
     align-items: center; /* Aligns items vertically in the center */
@@ -193,12 +199,6 @@ nav ul a {
     /* Additional styling as needed */
 }
 
-.opaque-box img {
-    width: 100%;
-    height: auto;
-    /* margin-right: 20px; /* Space between the image and the text */
-    /* Adjust size as needed */
-}
 
 .vid_class {
     width: 100%;
