@@ -33,6 +33,10 @@ p {
     border-top: .5rem solid #000;
 }
 
+nav a {
+    display: flex;
+}
+
 .logo {
     position: relative;
     left: 0;
