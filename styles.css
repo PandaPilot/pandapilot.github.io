@@ -78,7 +78,7 @@ nav ul a {
     max-height: 4em;
 }
 
-@media (max-width: 800px) { /* Adjust 600px to your preference for the 'narrow' threshold */
+@media (max-width: 700px) { /* Adjust 600px to your preference for the 'narrow' threshold */
     nav ul {
         display: none; /* Hide the container on screens narrower than 600px */
     }
