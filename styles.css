@@ -114,26 +114,17 @@ nav ul a {
     color: rgba(0, 0, 0, 1.0); /* Example color, change as needed */
 }
 
-
-
-.centre-box {
-    position: relative;
-    display: flex;
-    width: 100%;
-    justify-content: center;
+.sticky-view_more {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 50;
+    left: 50;
+    transform: translateX(-50%);
+    padding: 3vh 7.5vw;
+    background-color: rgb(255, 255, 255); 
+    text-transform: uppercase;
+    z-index: 100;
 }
-
-.project-box {
-    width: 100%;
-}
-
-.project-box img {
-    height: auto;
-    width: 100%;
-    /* margin-right: 20px; /* Space between the image and the text */
-    /* Adjust size as needed */
-}
-
 
 .vid_class {
     width: 100%;
