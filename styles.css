@@ -99,10 +99,6 @@ nav ul a {
     left: 0;
     width: 100vw;
     padding: 3em; 
-    margin-top: 3vh;
-    margin-bottom: 3vh; /* Adds space below each translucent box */
-    margin-left: 3.5vw; /* Adds space below each translucent box */
-    margin-right: 3.5vw;
 }
 
 #intro .text-box {
