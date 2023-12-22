@@ -110,6 +110,13 @@ nav ul a {
     padding-top: 5.5em;
 }
 
+.scrolly.active, .scrolly:focus {
+    color: #000000; /* Example color, change as needed */
+    /* Add more styling as needed */
+}
+
+
+
 .centre-box {
     position: relative;
     display: flex;
