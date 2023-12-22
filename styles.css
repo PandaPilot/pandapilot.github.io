@@ -91,6 +91,12 @@ nav ul a {
     }
 }
 
+@media (max-width: 500px) { /* Adjust 600px to your preference for the 'narrow' threshold */
+    nav ul {
+        display: none; /* Hide the container on screens narrower than 600px */
+    }
+}
+
 .translucent-box {
     position: static;
     display: flex;
