@@ -113,14 +113,13 @@ nav ul a {
     justify-content: center;
 }
 
-.square-box {
-    width: 100vw;
-    height:100vw;
+.project-box {
+    width: 150vw;
 }
 
-.square-box img {
-    height: 100%;
-    width: auto;
+.project-box img {
+    height: auto;
+    width: 100%;
     /* margin-right: 20px; /* Space between the image and the text */
     /* Adjust size as needed */
 }
