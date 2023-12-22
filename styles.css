@@ -86,7 +86,7 @@ nav ul a {
 
 
 @media (max-width: 700px) { /* Adjust 600px to your preference for the 'narrow' threshold */
-    nav ul {
+    .remove_when_small {
         display: none; /* Hide the container on screens narrower than 600px */
     }
 }
