@@ -112,7 +112,7 @@ nav ul a {
 
 .scrolly.active, .scrolly:focus {
     color: #000000; /* Example color, change as needed */
-    /* Add more styling as needed */
+    text-shadow: 2px 2px 2px #000000;
 }
 
 
