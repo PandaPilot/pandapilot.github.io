@@ -143,14 +143,3 @@ nav ul a {
     margin-bottom: 2em;
     /* Additional styling */
 }
-.carousel-control-prev, .carousel-control-next {
-    z-index: 30;
-
-}
-.carousel-control-prev .carousel-control-prev-icon, .carousel-control-next .carousel-control-next-icon {
-    position: sticky;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-}
