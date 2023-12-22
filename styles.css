@@ -116,6 +116,7 @@ nav ul a {
 
 .project-box {
     width: 100%;
+    overflow: hidden;
 }
 
 .project-box img {
