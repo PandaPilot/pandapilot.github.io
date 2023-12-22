@@ -47,14 +47,22 @@ window.onresize = debouncedFindMaxHeight;
 var myCarousel = document.querySelector('#myCarousel');
 
 myCarousel.addEventListener('slid.bs.carousel', function () {
+    // Get the index of the currently active slide
     var activeIndex = this.querySelector('.carousel-indicators .active').getAttribute('data-bs-slide-to');
 
-    // Update the indicators
-    var indicators = this.querySelectorAll('.carousel-indicators button');
-    indicators.forEach(function(indicator) {
+    // Update all indicators in both sets
+    var allIndicators = this.querySelectorAll('.carousel-indicators button');
+    allIndicators.forEach(function(indicator) {
         indicator.classList.remove('active');
     });
-    indicators[activeIndex].classList.add('active');
+
+    // Activate the corresponding indicators in both sets
+    this.querySelectorAll('.carousel-indicators').forEach(function(indicatorSet) {
+        var newActiveIndicator = indicatorSet.querySelector('button[data-bs-slide-to="' + activeIndex + '"]');
+        if (newActiveIndicator) {
+            newActiveIndicator.classList.add('active');
+        }
+    });
 });
 
 /*
