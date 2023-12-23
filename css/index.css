@@ -105,7 +105,7 @@ nav ul a {
 }
 
 .opaque-box {
-    position: static;
+    position: relative;
     display: flex;
     width: 100%;
     background-color: rgba(255, 255, 255, 1);
