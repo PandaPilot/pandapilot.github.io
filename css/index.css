@@ -118,6 +118,7 @@ nav ul a {
     left: 5%;
     width: 90vw;
     padding-top: 7.5vw;
+    z-index:60;
 }
 
 #intro .text-box {
@@ -151,7 +152,7 @@ nav ul a {
     padding: 3vh 7.5vw;
     background-color: rgb(255, 255, 255); 
     text-transform: uppercase;
-    z-index: 50;
+    z-index: 5;
     pointer-events: none;
 }
 
