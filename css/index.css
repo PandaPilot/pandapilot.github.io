@@ -156,12 +156,6 @@ nav ul a {
     pointer-events: none;
 }
 
-.vid_class {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9; /* Standard aspect ratio for YouTube videos */
-    border-radius: 2em;
-}
 .pdf_class {
     width: 100%;
     aspect-ratio: 0.8; /* width to height*/
