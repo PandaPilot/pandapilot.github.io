@@ -1,76 +1,77 @@
 html {
     text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
+/* Avoid horizontal scrollbars from fixed 150vw */
 body {
     display: block;
-    width: 150vw;
-    text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+    width: 100%;
     background-color: #ffffff;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right bottom;
     background-attachment: fixed;
-    font-family: Couture, Arial,'Gill Sans', sans-serif;
+    font-family: Couture, Arial, 'Gill Sans', sans-serif;
 }
 
-p {
-    font-size: 16px;
-}
+p { font-size: 16px; }
 
+/* NAV: robust, responsive bar */
 .floater {
     position: fixed;
     top: 0;
-    left:0;
+    left: 0;
+    right: 0;                   /* better than width:100vw to avoid overflow with scrollbars */
     display: flex;
-    flex-wrap: nowrap;
-    width: 100vw;
-    background-color: #fff;
+    align-items: center;
     justify-content: space-between;
+    gap: 0.75rem;
+    background-color: #fff;
     z-index: 100;
-    max-height: 4em;
-    border-top: 0.0rem solid #000;
+    padding: 0.5rem 1rem;
+    min-height: 3.5rem;         /* let content breathe; avoids clipping on small devices */
+    border-top: 0 solid #000;
 }
 
-.floater a {
-    margin: 0;
-    padding: 0;
-}
+.floater a { margin: 0; padding: 0; }
 
 .logo {
-    position: relative;
-    left: 0;
-    top: 0;
-    height: 100%;
-    max-height: 4em;
+    height: 2.5rem;             /* fixed, predictable logo height */
+    max-height: 4em;            /* your previous cap still respected */
+    width: auto;
 }
 
+/* === NAV LIST === */
 nav ul {
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    text-align: center;
-    height: inherit;
-    line-height: inherit;
-    margin-top: 0.925em;
-}
+    align-items: center;
+    justify-content: flex-end;  /* space items to the right of the logo */
+    gap: 0.75rem;
 
-nav > ul {
-    list-style: none;
+    /* important: do not inherit height/line-height; avoid pushing off-screen */
+    height: auto;
+    line-height: normal;
+
+    /* no width 100% + margin-top; let flex do the layout */
+    width: auto;
+    margin: 0;
     padding: 0;
+    list-style: none;
 }
 
+nav > ul { list-style: none; padding: 0; }
+
+nav ul li {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Links: remove stray comment token and avoid vertical offsetting */
 nav ul a {
-    -moz-transition: color 0.2s ease;
-    -webkit-transition: color 0.2s ease;
-    -ms-transition: color 0.2s ease;
     transition: color 0.2s ease;
     border: 0;
-    color: rgba(0, 0, 0, 0.65);*/
+    color: rgba(0, 0, 0, 0.65);
     display: block;
     font-size: .75em;
     font-weight: bold;
@@ -81,22 +82,43 @@ nav ul a {
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
-    top: 25%;
+    /* top: 25%;  <-- removed: caused odd vertical shift in small navs */
 }
 
-
-@media (max-width: 700px) { /* Adjust 600px to your preference for the 'narrow' threshold */
-    .remove_when_small {
-        display: none; /* Hide the container on screens narrower than 600px */
-    }
+/* Language toggle button (inside nav). Add class="lang-toggle persistent" to it. */
+.lang-toggle {
+    cursor: pointer;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    line-height: 1;
+    backdrop-filter: blur(4px);
 }
+.lang-toggle:hover { background: rgba(0,0,0,0.05); }
 
-@media (max-width: 500px) { /* Adjust 600px to your preference for the 'narrow' threshold */
+/* On narrow screens: hide only .remove_when_small, keep UL visible and scrollable if crowded */
+@media (max-width: 700px) {
+    .remove_when_small { display: none !important; }
+
     nav ul {
-        display: none; /* Hide the container on screens narrower than 600px */
+        justify-content: flex-start;
+        flex-wrap: nowrap;         /* keep one row */
+        overflow-x: auto;          /* allow swipe scroll */
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;     /* Firefox */
     }
+    nav ul::-webkit-scrollbar { display: none; }
+
+    /* make sure the language button never disappears */
+    .persistent { display: inline-flex !important; visibility: visible !important; }
 }
 
+/* Remove the old "hide entire ul" rule */
+ /* @media (max-width: 500px) { nav ul { display: none; } }  */
+
+/* --- Content sections (unchanged semantics, small safety tweaks) --- */
 .translucent-box {
     position: static;
     display: flex;
@@ -109,7 +131,7 @@ nav ul a {
     display: flex;
     width: 100%;
     background-color: rgba(255, 255, 255, 1);
-    z-index:55;
+    z-index: 55;
 }
 
 .text-box {
@@ -117,39 +139,24 @@ nav ul a {
     top: 0;
     left: 5%;
     width: 90vw;
-    z-index:60;
+    z-index: 60;
 }
 
-#intro .text-box {
-    padding-top: 5.5em;
-}
+#intro .text-box { padding-top: 5.5em; }
+#press_interviews .text-box { padding-bottom: 10em; }
 
-#press_interviews .text-box {
-    padding-bottom: 10em;
-}
+.scrolly.active, .scrolly:focus { color: rgba(0, 0, 0, 1.0); }
 
-.scrolly.active, .scrolly:focus {
-    color: rgba(0, 0, 0, 1.0); /* Example color, change as needed */
-}
-
-.project-box {
-    width: 100%;
-    overflow: hidden;
-}
-
-.project-box img {
-    width: 100%;
-    height: auto;
-    display: block; /* This removes any default whitespace below the image */
-}
+.project-box { width: 100%; overflow: hidden; }
+.project-box img { width: 100%; height: auto; display: block; }
 
 .sticky-view_more {
     position: fixed;
-    top: 70%;  /* Adjust these to place your text */
-    left: 50%; /* Adjust these to place your text */
+    top: 70%;
+    left: 50%;
     transform: translate(-50%, -50%);
     padding: 3vh 7.5vw;
-    background-color: rgb(255, 255, 255); 
+    background-color: rgb(255, 255, 255);
     text-transform: uppercase;
     z-index: 5;
     pointer-events: none;
@@ -157,7 +164,7 @@ nav ul a {
 
 .pdf_class {
     width: 100%;
-    aspect-ratio: 0.8; /* width to height*/
+    aspect-ratio: 0.8;
     margin-bottom: 2em;
 }
 
@@ -165,16 +172,12 @@ nav ul a {
     width: 90%;
     margin-top: 2em;
     margin-bottom: 2em;
-    /* Additional styling */
 }
 
 #cinema-container.cinema-mode {
     background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     z-index: 9999;
     display: flex;
     align-items: center;
