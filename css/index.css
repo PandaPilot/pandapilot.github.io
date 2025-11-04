@@ -132,6 +132,7 @@ nav ul a {
 
 /* Language toggle button (inside nav). Add class="lang-toggle persistent" to it. */
 .lang-toggle {
+    white-space: nowrap;
     cursor: pointer;
     background: rgba(255,255,255,0.1);
     border: 1px solid rgba(0,0,0,0.15);
