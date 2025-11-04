@@ -85,6 +85,25 @@ nav ul a {
     /* top: 25%;  <-- removed: caused odd vertical shift in small navs */
 }
 
+.contact-lines {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1.7;
+}
+
+.contact-row {
+  display: flex;
+  align-items: baseline;   /* keeps punctuation aligned nicely */
+  gap: 0.75rem;            /* spacing between label and address */
+  margin-block: 0.2rem;
+}
+
+.contact-row span:first-child {
+  min-width: 10rem;        /* align labels; tweak as you like */
+  font-weight: 500;
+}
+
+
 /* Language toggle button (inside nav). Add class="lang-toggle persistent" to it. */
 .lang-toggle {
     cursor: pointer;
