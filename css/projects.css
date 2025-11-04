@@ -15,6 +15,8 @@ body {
     font-family: Couture, Arial,'Gill Sans', sans-serif;
 }
 
+strong { font-family: 'Couture Bold'; }
+
 p {
     font-size: 16px;
 }
