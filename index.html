@@ -8,7 +8,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="icon/icon180.png">
     <link rel="icon" type="image/png" sizes="128x128" href="icon/icon128.png">
     <link rel="manifest" href="icon/site.webmanifest">
-    <link rel="stylesheet" href="css/index.css">
+    <!-- Link to the main stylesheet. Updated to reflect the actual file location -->
+    <link rel="stylesheet" href="index.css">
     <style>
         .lang-toggle {
             cursor: pointer;
@@ -47,21 +48,21 @@
         <div class="translucent-box">
             <div class="text-box">
                 <h3 class="lang" data-en="About Us" data-zh="关于">About Us</h3>
-                <p class="lang"
+                <p class="lang reveal"
                     data-en="We believe robots should work with the world — not against it. Our machines move with purpose, adapting naturally to their tasks and environments."
                     data-zh="我们相信，机器人应当与世界协同，而非对抗。我们的机器以目的为导向，能够自然地适应其任务与环境。">
                     We believe robots should work with the world — not against it. Our machines move with purpose,
                     adapting naturally to their tasks and environments.
                 </p>
-                <p class="lang"
+                <p class="lang reveal"
                     data-en="Built on the principles of necessity and balance, our systems act precisely as the task demands — nothing more, nothing less."
                     data-zh="以必要与平衡为原则，我们的系统精准地履行任务所需——不多一分，不少一分。">
                     Built on the principles of necessity and balance, our systems act precisely as the task demands —
                     nothing more, nothing less.
                 </p>
-                <p class="lang"
+                <p class="lang reveal"
                     data-en="Robosloth Technologies stands for a new kind of robotics: purposeful by design, safe by nature, and always in harmony with the world it serves."
-                    data-zh="Robosloth Technologies 代表着一种全新的机器人理念：以目的为核心设计、以安全为本质，并始终与所服务的世界保持和谐。">
+                    data-zh="树懒科技代表着一种全新的机器人理念：以目的为核心设计、以安全为本质，并始终与所服务的世界保持和谐。">
                     Robosloth Technologies stands for a new kind of robotics: purposeful by design, safe by nature, and
                     always in harmony with the world it serves.
                 </p>
@@ -143,6 +144,29 @@
 
         // Initialize language on load
         setLanguage(currentLang);
+    </script>
+
+    <!-- Fade-in animation for elements with the `.reveal` class.  The script uses
+         IntersectionObserver to apply the `in` class when elements enter the viewport.
+         If IntersectionObserver isn't available, elements are shown immediately.  -->
+    <script>
+        (function () {
+            // Check for IntersectionObserver support
+            if (!('IntersectionObserver' in window)) {
+                document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+                return;
+            }
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { root: null, rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+            // Observe each element with the `reveal` class
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        })();
     </script>
 </body>
 
