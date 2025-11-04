@@ -38,7 +38,7 @@ p { font-size: 16px; }
 
 .logo {
     /* height: 2.5rem;          /* fixed, predictable logo height */
-    max-height: 4em;            /* your previous cap still respected */
+    height: 4em;            /* your previous cap still respected */
     width: auto;
 }
 
