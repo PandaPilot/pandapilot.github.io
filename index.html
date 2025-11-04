@@ -30,8 +30,8 @@
 <body>
     <nav class="floater">
         <a href="index.html">
-            <img class="logo" role="img" alt="Robosloth" data-en="images/Logo_2w_background.png"
-                    data-zh="images/Logo_2w_CN.png" src="images/Logo_2w_background.png">
+            <img id="logo" class="logo" role="img" alt="Robosloth" data-en="images/Logo_2w_background.png"
+                data-zh="images/Logo_2w_CN.png" src="images/Logo_2w_background.png">
         </a>
         <ul>
             <li><a href="#intro" class="scrolly remove_when_small lang" data-en="About us" data-zh="关于">About us</a>
@@ -119,32 +119,7 @@
         </div>
     </section>
 
-    <script>
-        const toggleButton = document.getElementById('langToggle');
-        let currentLang = localStorage.getItem('lang');
-
-        // Detect browser language if no saved preference
-        if (!currentLang) {
-            const browserLang = navigator.language || navigator.userLanguage;
-            currentLang = browserLang.startsWith('zh') ? 'zh' : 'en';
-        }
-
-        function setLanguage(lang) {
-            document.querySelectorAll('.lang').forEach(el => {
-                el.textContent = el.getAttribute(`data-${lang}`);
-            });
-            document.documentElement.lang = lang;
-            localStorage.setItem('lang', lang);
-        }
-
-        toggleButton.addEventListener('click', () => {
-            currentLang = currentLang === 'en' ? 'zh' : 'en';
-            setLanguage(currentLang);
-        });
-
-        // Initialize language on load
-        setLanguage(currentLang);
-    </script>
+    <script src="js/local.js"></script>
 </body>
 
 </html>
