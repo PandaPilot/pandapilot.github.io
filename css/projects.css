@@ -15,7 +15,11 @@ body {
     font-family: Couture, Arial,'Gill Sans', sans-serif;
 }
 
-strong { font-family: 'Couture Bold'; }
+strong {
+  font-family: Arial, 'Gill Sans', sans-serif;
+  font-weight: 700; /* 700 = Bold */
+}
+
 
 p {
     font-size: 16px;
