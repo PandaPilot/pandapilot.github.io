@@ -3,73 +3,6 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
-/* -------------------------------------------------------------------------
- * Responsive spacing and reveal animation styles
- *
- * The following rules introduce responsive padding, font sizing, line height
- * and spacing for the introductory text.  They also define a fade-in
- * animation for any element with the `reveal` class.  When such elements
- * enter the viewport, they transition from a slightly translated, invisible
- * state to full opacity.  Users with `prefers-reduced-motion` enabled will
- * see the content immediately without animation.
- */
-
-/* Custom properties controlling reveal animation timing and displacement */
-:root {
-    --reveal-translate: 12px;
-    --reveal-duration: 650ms;
-    --reveal-ease: cubic-bezier(.2,.65,.2,1);
-}
-
-/* Introductory text box adjustments.  Constrain width and adjust padding
- * responsively; scale the font size and line height to improve readability. */
-#intro .text-box {
-    margin-inline: auto;
-    /* Override the default width set on .text-box (90vw) so that
-       the max-width constraint takes effect. */
-    width: 100%;
-    max-width: 68ch;
-    padding: 6rem 1.25rem;
-    font-size: clamp(1.05rem, 1rem + 0.5vw, 1.25rem);
-    line-height: 1.7;
-}
-
-@media (min-width: 768px) {
-    #intro .text-box {
-        padding: 7rem 1.25rem;
-    }
-}
-
-/* Add vertical spacing between consecutive language blocks in the intro */
-#intro .text-box .lang + .lang {
-    margin-top: 1.15rem;
-}
-
-/* Base reveal state: elements start invisible and translated downward */
-.reveal {
-    opacity: 0;
-    transform: translateY(var(--reveal-translate));
-    transition:
-        opacity var(--reveal-duration) var(--reveal-ease),
-        transform var(--reveal-duration) var(--reveal-ease);
-}
-
-/* When the `in` class is applied (via IntersectionObserver), show the element */
-.reveal.in {
-    opacity: 1;
-    transform: none;
-}
-
-/* Respect users who prefer reduced motion: disable animation effects */
-@media (prefers-reduced-motion: reduce) {
-    .reveal,
-    .reveal.in {
-        opacity: 1 !important;
-        transform: none !important;
-        transition: none !important;
-    }
-}
-
 /* Avoid horizontal scrollbars from fixed 150vw */
 body {
     display: block;
@@ -209,11 +142,7 @@ nav ul a {
     z-index: 60;
 }
 
-#intro .text-box {
-    /* padding is now handled responsively near the top of the file via
-       responsive variables.  We leave this rule empty to prevent
-       accidental overrides. */
-}
+#intro .text-box { padding-top: 5.5em; }
 #press_interviews .text-box { padding-bottom: 10em; }
 
 .scrolly.active, .scrolly:focus { color: rgba(0, 0, 0, 1.0); }
