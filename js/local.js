@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", function() {
     function setLanguage(lang) {
         // Text content swap
         document.querySelectorAll('.lang').forEach(el => {
-            const text = el.getAttribute(`data-${lang}`);
-            if (text) el.textContent = text;
-        });
+      el.innerHTML = el.getAttribute(`data-${lang}`); // ← render HTML, not text
+      el.setAttribute('lang', lang === 'zh' ? 'zh-CN' : 'en');
+    });
 
         // Logo swap (with alt text)
         if (logo) {
