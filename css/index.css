@@ -94,7 +94,7 @@ nav ul a {
 .contact-row {
   display: flex;
   align-items: baseline;   /* keeps punctuation aligned nicely */
-  gap: 0.75rem;            /* spacing between label and address */
+  gap: 0.5rem;            /* spacing between label and address */
   margin-block: 0.2rem;
 }
 
