@@ -99,7 +99,7 @@ nav ul a {
 }
 
 .contact-row span:first-child {
-  min-width: 10rem;
+  min-width: 7.5rem;
   font-weight: 500;
 }
 
@@ -109,11 +109,10 @@ nav ul a {
 }
 
 .email-icon {
-  
   height: 1.0ex;
   width: auto;
   transition: opacity 0.2s ease;
-  vertical-align: middle;
+  vertical-align: baseline;
   cursor: pointer;
 }
 
@@ -145,21 +144,27 @@ nav ul a {
 }
 .lang-toggle:hover { background: rgba(0,0,0,0.05); }
 
-/* On narrow screens: hide only .remove_when_small, keep UL visible and scrollable if crowded */
+/* progressively hide nav items on smaller screens */
+@media (max-width: 1000px) {
+  .hide-s4 { display: none !important; }
+}
+
+@media (max-width: 900px) {
+  .hide-s3 { display: none !important; }
+}
+
+@media (max-width: 800px) {
+  .hide-s2 { display: none !important; }
+}
+
 @media (max-width: 700px) {
-    .remove_when_small { display: none !important; }
+  .hide-s1 { display: none !important; }
+}
 
-    nav ul {
-        justify-content: flex-start;
-        flex-wrap: nowrap;         /* keep one row */
-        overflow-x: auto;          /* allow swipe scroll */
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;     /* Firefox */
-    }
-    nav ul::-webkit-scrollbar { display: none; }
-
-    /* make sure the language button never disappears */
-    .persistent { display: inline-flex !important; visibility: visible !important; }
+/* ensure language button remains always visible */
+.persistent {
+  display: inline-flex !important;
+  visibility: visible !important;
 }
 
 /* Remove the old "hide entire ul" rule */
