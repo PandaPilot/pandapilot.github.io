@@ -19,7 +19,9 @@ strong {
   font-family: Arial, 'Gill Sans', sans-serif;
   font-weight: 700; /* 700 = Bold */
 }
-
+em, i {
+  font-style: italic;
+}
 
 p {
     font-size: 16px;
